@@ -1,9 +1,8 @@
 # Personal Site
-available [here](http://www.cartwatson.com) at cartwatson.com
+available at [www.cartwatson.com](http://www.cartwatson.com)
 
 # info
 * hosted through github pages  
 * custom domain from google domains  
 * created with the hugo framework
 
-superfluous change, testing workflow
