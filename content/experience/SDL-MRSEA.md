@@ -1,9 +1,9 @@
 ---
-title: "Mixed Reality Software Engineering Assistant"
+title: "Mixed Reality Software Engineering Intern"
 description: "Space Dynamics Laboratory --- Logan, Utah"
 dateString: July 2022 - Present
 draft: false
-tags: ["Mixed Reality", "Virtual Reality", "Augmented Reality", "C#", "Blazor", "Web Development", "Stereokit"]
+tags: ["Mixed Reality", "Virtual Reality", "Augmented Reality", "C#", "Blazor", "Web Development", "Stereokit", "Atlassian Tools",]
 showToc: false
 weight: 101
 ---
