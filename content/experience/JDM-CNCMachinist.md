@@ -1,6 +1,7 @@
 ---
 title: "CNC Machinist"
-description: "JD Machine --- Ogden, Utah"
+company: "JD Machine"
+location: "Ogden, Utah"
 dateString: Jan 2019 - August 2019
 draft: false
 tags: ["CNC Machining",]

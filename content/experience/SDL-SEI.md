@@ -1,6 +1,7 @@
 ---
 title: "Software Engineering Intern"
-description: "Space Dynamics Laboratory --- Logan, Utah"
+company: "Space Dynamics Laboratory"
+location: "Logan, Utah"
 dateString: Jan 2021 - Feb 2022
 draft: false
 tags: ["Bash", "Python", "Linux", "Vim", "Puppet", "Atlassian Tools",]

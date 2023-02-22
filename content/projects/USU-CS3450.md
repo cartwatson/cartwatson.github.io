@@ -1,7 +1,7 @@
 ---
 title: "Dan's Auto Barn"
 description: "blah blah blah"
-dateString: January 2023 - 
+dateString: January 2023 - May 2023
 draft: false
 tags: ["Django", "Vue.js", "SQLite", "Git", ]
 showToc: false

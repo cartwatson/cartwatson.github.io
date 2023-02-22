@@ -1,6 +1,7 @@
 ---
 title: "CNC Machinist"
-description: "Central Valley Machine --- Logan, Utah"
+company: "Central Valley Machine"
+location: "Logan, Utah"
 dateString: Aug 2019 - Sep 2020
 draft: false
 tags: ["CNC Machining",]

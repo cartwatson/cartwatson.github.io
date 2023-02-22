@@ -1,6 +1,7 @@
 ---
 title: "Project Managment Intern"
-description: "Petersen Inc --- Ogden, Utah"
+company: "Petersen Inc"
+location: "Ogden, Utah"
 dateString: May 2020 - August 2020
 draft: false
 tags: ["Project Management", "Industrial Production",]
