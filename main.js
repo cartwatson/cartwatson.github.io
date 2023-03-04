@@ -15,7 +15,6 @@ camera.position.setZ(30);
 
 function animate() {
   requestAnimationFrame( animate );
-
   renderer.render( scene, camera );
 }
 
