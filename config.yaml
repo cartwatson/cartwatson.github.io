@@ -1,0 +1,64 @@
+baseURL: 'https://cartwatson.github.io/hugo.site/'
+languageCode: en-us
+title: Carter Watson
+theme: hugo-PaperMod
+
+# top bar
+menu:
+  main:
+  - identifier: home
+    name: Home
+    url: /
+    weight: 10
+  - identifier: projects
+    name: Projects
+    url: /projects
+    weight: 20
+  - identifier: experience
+    name: Experience
+    url: /experience
+    weight: 30
+  # - identifier: extracurricular
+  #   name: Extracurricular
+  #   url: /extracurricular
+  #   weight: 35
+  - identifier: blog
+    name: Blog
+    url: /blog
+    weight: 40
+  - identifier: tags
+    name: Tags
+    url: /tags
+    weight: 50
+  - identifier: contact
+    name: Contact
+    url: /contact
+    weight: 60
+
+params:
+  # theme params
+  showToc: true
+  TocOpen: false
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  hideMeta: false
+
+  # home page params
+  profileMode:
+    enabled: true
+    title: "Carter Watson"
+    subtitle: Hi, I'm a Computer Science student at Utah State University. I plan to graduate in December 2023.
+    imageUrl: "home/me.jpg" # TODO: implement
+    imageTitle: "photo of myself"
+    imageWidth: 220
+    imageHeight: 220
+
+  socialIcons:
+    - name: "email"
+      url: "mailto:cartwatson@gmail.com"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/cartwatson"
+    - name: "github"
+      url: "https://www.github.com/cartwatson"
+    - name: "resume"
+      url: "https://docs.google.com/document/d/1f6PQ4gbiu_FFPFTMN__bkbuYpodXf3YLfcmBat8z3Wg/edit?usp=sharing"

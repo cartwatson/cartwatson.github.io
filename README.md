@@ -1,7 +1,5 @@
-# Portfolio Site
-available at [cartwatson.com](https://www.cartwatson.com)  
-Portfolio site created using html, css, and vanilla js  
-built using vite, three.js  
+# Personal Site
+available at [www.cartwatson.github.io/hugo.site](http://www.cartwatson.github.io/hugo.site)
 
 ## References
 * [fireship.io video](https://www.youtube.com/watch?v=Q7AOvWpIVHU)  
