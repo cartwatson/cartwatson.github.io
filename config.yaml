@@ -1,4 +1,4 @@
-baseURL: 'http://cartwatson.github.io/'
+baseURL: 'http://cartwatson.github.io/hugo.site/'
 languageCode: en-us
 title: Carter Watson
 theme: hugo-PaperMod
