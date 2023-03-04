@@ -1,5 +1,6 @@
+<<<<<<< HEAD
 # Personal Site
-available at [www.cartwatson.com](http://www.cartwatson.com)
+available at [www.cartwatson.github.io/hugo.site](http://www.cartwatson.github.io/hugo.site)
 
 # info
 * hosted through github pages  
