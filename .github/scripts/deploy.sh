@@ -19,7 +19,7 @@ echo 'www.cartwatson.com' > CNAME
 # git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io
-git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git gh-pages
+git push -f git@github.com:cartwatson/cartwatson.github.io.git gh-pages
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
