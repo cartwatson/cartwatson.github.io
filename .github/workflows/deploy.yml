@@ -31,7 +31,7 @@ jobs:
           name: production-files
           path: ./dist
       - name: Create CNAME
-        run: ./deploy.sh
+        run: .github/scripts/deploy.sh
         shell: bash
 
   deploy:
