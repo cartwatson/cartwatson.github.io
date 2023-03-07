@@ -30,9 +30,6 @@ jobs:
         with:
           name: production-files
           path: ./dist
-      - name: Create CNAME
-        run: .github/scripts/deploy.sh
-        shell: bash
 
   deploy:
     name: Deploy
