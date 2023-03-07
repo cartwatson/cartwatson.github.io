@@ -31,8 +31,10 @@ jobs:
           name: production-files
           path: ./dist
       - name: Create CNAME
-        run: ./.github/scripts/build.sh
-        shell: bash
+        uses: finnp/create-file-action@master
+          env:
+            FILE_NAME: "./dist/CNAME"
+            FILE_DATA: "cartwatson.com"
 
   deploy:
     name: Deploy
