@@ -1,23 +1,96 @@
 body {
+    background-color: #1a1a1a;
     margin: 0;
 }
 
-#container {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    height: 100vh;
-    background-color: #ff0000;
+#navbar {
+    background-color: aqua;
+    width: 100%;
+    height: auto;
+    padding: 0.25rem;
+    position: fixed;
+    top: 0;
 }
 
-.heading1 {
-    grid-column: span 2;
-    grid-row: span 1;
+#footer {
+    /* background-color: aqua; */
+    width: 100%;
+    height: auto;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: lightgray;
+}
+
+#navbar > div:first-child, #footer > div:first-child {
+    width: 70%;
+    margin: auto;
+}
+
+#sidebar {
+    position: fixed;
+    top: 30%;
+    left: 27.5%;
+    height: 25%;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sidebar a {
+    color: aqua;
+    text-decoration: none;
+    font-size: 14px;
+}
+  
+#sidebar a:hover {
+    color: deeppink;
+}
+  
+#sidebar i {
+    margin: 10px;
+}
+  
+.fab, .fas {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#container {
+    margin-top: 3rem;
+    /* content grid */
+    display: grid;
+    /* grid-template-columns: 0.2fr 0.4fr 0.6fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.8fr 0.6fr 0.4fr 0.2fr; */
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    height: 100vh;
+}
+
+.button {
+    background-color: aliceblue;
+    margin: 0.25rem;
+    padding: 0.25rem;;
+}
+
+.button:hover {
+    background-color: deeppink;
+    color: black;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
 }
 
 h1 {
     font-size: 32px;
-    text-align: center;
+    text-align: left;
 }
 
 .details1 {
@@ -27,12 +100,12 @@ h1 {
 
 h2 {
     font-size: 24px;
-    text-align: center;
+    text-align: left;
 }
 
 p {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     cursor: pointer;
 }
 
@@ -46,4 +119,24 @@ p {
     background-color: white;
     display: none;
 }
-  
+
+.tile {
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: #7d7d7d;
+    border-radius: 0.5rem;
+}
+
+/* TILES */
+/* .tilesWork { 
+    grid-area: 2 / 6 / span 2 / span 5;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+} */
+
+/* HEADERS */
+.HWork {
+    /* Starts at row 1, column 6, spans 1 row and 2 columns */
+    grid-area: 1 / 6 / span 1 / span 2;
+}
