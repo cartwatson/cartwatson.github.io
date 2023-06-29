@@ -1,32 +1,73 @@
+:root {
+    --background-dark: #1a1a1a;
+    --background-light: #f5f5f5;
+    --mid-gray-dark: #999999;
+    --mid-gray-light: #999999;
+}
+
+/* @media (prefers-color-scheme: dark) {
+    :root {
+        --mid-gray: var(--mid-gray-dark);
+        --bg: var(--background-dark);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --mid-gray: var(--mid-gray-light);
+        --bg: var(--background-light);
+    }
+} */
+
 body {
-    background-color: #1a1a1a;
+    background-color: var(--bg);
     margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 #navbar {
-    background-color: aqua;
+    background-color: var(--blue);
     width: 100%;
     height: auto;
     padding: 0.25rem;
-    position: fixed;
-    top: 0;
 }
 
 #footer {
     /* background-color: aqua; */
-    width: 100%;
-    height: auto;
+    position: absolute;
+    bottom: 0;
+    height: 16rem; /* footer height */
+
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    color: lightgray;
+    margin-top: 4rem;
+    background-color: black;
+    width: 100%;
 }
 
 #navbar > div:first-child, #footer > div:first-child {
     width: 70%;
     margin: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#sidebar {
+#footerbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+  
+#footerbar a:hover {
+    color: gray;
+}
+  
+#footerbar i {
+    margin: 10px;
+}
+
+/* #sidebar {
     position: fixed;
     top: 30%;
     left: 27.5%;
@@ -50,7 +91,7 @@ body {
   
 #sidebar i {
     margin: 10px;
-}
+} */
   
 .fab, .fas {
     display: inline-block;
@@ -62,25 +103,20 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-#container {
-    margin-top: 3rem;
-    /* content grid */
-    display: grid;
-    /* grid-template-columns: 0.2fr 0.4fr 0.6fr 0.8fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.8fr 0.6fr 0.4fr 0.2fr; */
-    grid-template-columns: repeat(15, 1fr);
-    grid-template-rows: repeat(10, 1fr);
-    height: 100vh;
-}
-
 .button {
-    background-color: aliceblue;
+    background-color: transparent;
     margin: 0.25rem;
-    padding: 0.25rem;;
+    padding: 0.25rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-radius: 16px;
+    border-style: outset;
+    border-color: black;
 }
 
 .button:hover {
-    background-color: deeppink;
-    color: black;
+    background-color: black;
+    color: white;
 }
 
 .flex-row {
@@ -88,55 +124,19 @@ body {
     flex-direction: row;
 }
 
-h1 {
-    font-size: 32px;
-    text-align: left;
-}
-
-.details1 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-h2 {
-    font-size: 24px;
-    text-align: left;
-}
-
 p {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: left;
-    cursor: pointer;
 }
 
-.popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-    height: 300px;
-    background-color: white;
-    display: none;
+#content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 16rem; /* footer height */
 }
 
-.tile {
-    grid-row: span 1;
-    grid-column: span 1;
-    background-color: #7d7d7d;
-    border-radius: 0.5rem;
-}
-
-/* TILES */
-/* .tilesWork { 
-    grid-area: 2 / 6 / span 2 / span 5;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    display: grid;
-} */
-
-/* HEADERS */
-.HWork {
-    /* Starts at row 1, column 6, spans 1 row and 2 columns */
-    grid-area: 1 / 6 / span 1 / span 2;
+#page {
+    position: relative;
+    min-height: 100vh;
 }
