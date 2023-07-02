@@ -1,7 +1,12 @@
+:root {
+    --hack-green: #20C20E ;
+}
+
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: 'Consolas';
 }
 
 #navbar {
@@ -17,40 +22,39 @@ body {
     top: 0; /* Stay on top */
     width: 100%; /* Full width */
     transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+    /* animation color */
+    transition: background-color 0.25s ease-in-out;
+}
+
+#navbar:hover {
+    background-color: black;
+    border-color: white;
+}
+
+#navbar:hover a {
+    color: white;
+    /* color: var(--hack-green); */
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    height: 16rem; /* footer height */
+    height: auto; /* footer height */
 
     padding: 0.5rem;
     background-color: black;
     width: 100%;
 }
 
-#footerbar a {
+#links a {
     color: white;
     text-decoration: none;
     font-size: 1.5rem;
 }
   
-#footerbar a:hover {
+#links a:hover {
     color: gray;
-}
-  
-#footerbar i {
-    margin: 10px;
-}
-  
-.fab, .fas {
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 .button {
@@ -70,7 +74,7 @@ footer {
     cursor: pointer;
 }
 
-.button > a:after {
+.button > a::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -78,14 +82,20 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: darkgray;
+    /* background-color: darkgray; */
+    background-color: var(--hack-green);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
-.button > a:hover:after {
+.button > a:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.edge-button {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .flex-row {
@@ -93,9 +103,18 @@ footer {
     flex-direction: row;
 }
 
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
 p {
     font-size: 1rem;
     text-align: left;
+}
+
+h1 {
+    color: var(--hack-green);
 }
 
 #content {

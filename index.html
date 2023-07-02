@@ -11,27 +11,26 @@
     <div id="page">
         <header id="navbar">
             <div class="flex-row" style="justify-content: space-between; align-items: center; height: 3rem;">
-                <div class="button" onclick="location.href='/'"
-                style="border-right: 0.125rem outset black; padding-left: 1rem; padding-right: 1rem;">
+                <div class="button edge-button" onclick="location.href='/'">
                     <a>CARTER WATSON</a>
                 </div>
                 <!-- Right justified -->
-                <div class="flex-row" style="justify-content: space-around; width: 50%;">
-                    <div class="button" onclick="location.href='#EXPERIENCE'">
-                        <a>EXPERIENCE</a>
+                <div id="navbar-middle" class="flex-row" style="justify-content: space-around; width: 50%;">
+                    <div class="button">
+                        <a href="#EXPERIENCE">EXPERIENCE</a>
                     </div>
-                    <div class="button" onclick="location.href='#PROJECTS'">
-                        <a>PROJECTS</a>
+                    <div class="button">
+                        <a href="#PROJECTS">PROJECTS</a>
                     </div>
-                    <div class="button" onclick="location.href='#EDUCATION'">
-                        <a>EDUCATION</a>
+                    <div class="button">
+                        <a href="#EDUCATION">EDUCATION</a>
                     </div>
-                    <div class="button" onclick="location.href='#CONTACT'">
-                        <a>CONTACT</a>
+                    <div class="button">
+                        <a href="#CONTACT">CONTACT</a>
                     </div>
                 </div>
-                <div class="button"
-                style="border-left: 0.125rem outset black; padding-left: 1rem; padding-right: 1rem;">
+                <!-- TODO: turn into hamburger menu -->
+                <div class="button edge-button">
                     <a>SHOW MORE</a>
                 </div>
             </div>
@@ -81,13 +80,25 @@
 
         <footer>
             <div class="flex-row" style="margin-top: 1rem; margin-left: auto; margin-right: auto; justify-content: space-around;">
-                <p style="color: white">&copy; Carter Watson 2023</p>
-                <div id="footerbar" class="flex-row" style="justify-content: space-around; align-items: center;">
-                    <a href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="icon fab fa-linkedin"></i></a>
-                    <a href="https://github.com/cartwatson" target="_blank"><i class="icon fab fa-github"></i></a>
-                    <a href="mailto:your.email@example.com"><i class="icon fas fa-envelope"></i></a>
-                    <a href="#" target="_blank"><i class="icon fas fa-file"></i></a>
+                <h1 style="color: white">CARTER WATSON</h1>
+                <div id="links" class="flex-col" style="justify-content: space-around; align-items: left;">
+                    <h4 style="color: lightgray;">GET IN TOUCH</h4>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="https://www.linkedin.com/in/cartwatson">LINKEDIN</a>
+                    </div>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="https://www.github.com/cartwatson">GITHUB</a>
+                    </div>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="mailto:your.email@example.com">EMAIL</a>
+                    </div>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="#">RESUME</a>
+                    </div>
                 </div>
+            </div>
+            <div class="flex-row" style="margin-left: auto; margin-right: auto; justify-content: center;">
+                <p style="color: gray;">&copy; Carter Watson 2023</p>
             </div>
         </footer>
     </div>
