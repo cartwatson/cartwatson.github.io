@@ -2,6 +2,10 @@
     --hack-green: #20C20E ;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -34,13 +38,12 @@ body {
 
 #navbar:hover a {
     color: white;
-    /* color: var(--hack-green); */
 }
 
 footer {
     position: absolute;
     bottom: 0;
-    height: auto; /* footer height */
+    height: auto;
 
     padding: 0.5rem;
     background-color: black;
@@ -52,14 +55,9 @@ footer {
     text-decoration: none;
     font-size: 1.5rem;
 }
-  
-#links a:hover {
-    color: gray;
-}
 
 .button {
     background-color: transparent;
-    /* margin: 0.25rem; */
     height: auto;
     padding: 0.5rem;
     padding-left: 0.5rem;
@@ -121,7 +119,7 @@ h1 {
     /* controls space between navbar and content */
     padding-top: 4rem;
     /* controls space between footer and content */
-    padding-bottom: 18rem; /* footer height 16rem */
+    padding-bottom: 20rem; /* footer height 16rem */
 }
 
 #page {

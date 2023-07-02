@@ -5,14 +5,14 @@ available at [cartwatson.com](http://www.cartwatson.com)
 Created with vanilla html, css, and js  
 
 ## TODO - prioritized
-[ ] nav bar  
-    [ ] fix left and right border difference with nav bar
+[X] nav bar  
 [ ] about section  
 [ ] contact section  
 [ ] experience section  
 [ ] single project highlight  
 [ ] project overviews  
-[ ] redo footer  
+[ ] fix id="content" margins  
+[X] redo footer  
 [ ] favicon  
 [ ] 
 
