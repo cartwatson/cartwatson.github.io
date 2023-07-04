@@ -127,9 +127,36 @@ h1 {
     min-height: 100vh;
 }
 
+/* icons */
+.fab, .fas {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--hack-green);
+}
+
+.fab:hover, .fas:hover {
+    color: black;
+}
+
+/* temp formatting */
+#content {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Mobile */
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     #navbar-middle {
         display: none;
     }
-} */
+
+    #content {
+        width: 90%;
+    }
+} 
