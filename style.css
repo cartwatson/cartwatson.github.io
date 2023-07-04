@@ -78,7 +78,7 @@ footer {
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 0;
+    bottom: -2px;
     left: 0;
     /* background-color: darkgray; */
     background-color: var(--hack-green);
@@ -109,10 +109,6 @@ footer {
 p {
     font-size: 1rem;
     text-align: left;
-}
-
-h1 {
-    color: var(--hack-green);
 }
 
 #content {
