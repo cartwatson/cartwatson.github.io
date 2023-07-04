@@ -14,6 +14,7 @@ body {
 }
 
 #navbar {
+    z-index: 1;
     width: 100%;
     height: 3rem;
     /* padding: 0.25rem; */
@@ -96,6 +97,30 @@ footer {
     padding-right: 1rem;
 }
 
+.secondary-button {
+    background-color: rgba(128, 128, 128, 0.5);
+
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+
+    border-radius: 10px;
+}
+
+.secondary-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: var(--hack-green);
+    opacity: 1.0;
+}
+
+.secondary-button:hover a {
+    color: black;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -111,17 +136,47 @@ p {
     text-align: left;
 }
 
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    padding: 5%;
+}
+
 #content {
     /* controls space between navbar and content */
     padding-top: 4rem;
     /* controls space between footer and content */
-    padding-bottom: 20rem; /* footer height 16rem */
+    padding-bottom: 14rem; /* footer height ~16rem */
 }
 
 #page {
     position: relative;
     min-height: 100vh;
 }
+
+/* video */
+#blackDotGif {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.video-overlay {
+    position: relative;
+    top: 30vh;
+    height: 90vh;
+    color: #f1f1f1;
+    width: 100%;
+}
+  
 
 /* icons */
 .fab, .fas {
@@ -140,11 +195,11 @@ p {
 }
 
 /* temp formatting */
-#content {
+/* #content {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* Mobile */
 @media screen and (max-width: 600px) {
@@ -152,7 +207,9 @@ p {
         display: none;
     }
 
-    #content {
+    /* add something to not play video on mobile */
+
+    /* #content {
         width: 90%;
-    }
+    } */
 } 
