@@ -14,7 +14,7 @@ Created with vanilla html, css, and js
 [ ] fix id="content" margins  
 [X] redo footer  
 [ ] favicon  
-[ ] 
+[ ] fix mobile representation
 
 ## links
 * [card animations](https://stackoverflow.com/questions/55465325/animate-a-div-from-bottom-to-top-with-css)
