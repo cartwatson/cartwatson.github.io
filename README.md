@@ -7,7 +7,8 @@ Created with vanilla html, css, and js
 ## TODO - prioritized
 [X] nav bar  
 [X] about section  
-[ ] contact section  
+[X] contact section  
+    [ ] fix submission status
 [ ] experience section  
 [ ] single project highlight  
 [X] project overviews  
