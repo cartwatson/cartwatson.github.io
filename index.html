@@ -30,14 +30,14 @@
                         <a href="#CONTACT">CONTACT</a>
                     </div>
                 </div>
-                <!-- TODO: turn into hamburger menu -->
+                <!-- TODO: do something with this or get rid of it -->
                 <div class="button edge-button">
-                    <a>MENU</a>
+                    <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LINKEDIN</a>
                 </div>
             </div>
         </header>
 
-        <section id="content" style="background-color: transparent;">
+        <div id="content">
             <section id="SPLASH" style="background-color: transparent;">
                 <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
                     <source src="media/blackDotGif.mp4" type="video/mp4">
@@ -61,22 +61,6 @@
                 </div>
             </section>
             
-            <!-- SECTION: TEMP: CONSTRUCTION BANNER --> <!--
-            <div style="background-color: white;">
-                <div class="container">
-                    <h1>Currently Under Construction</h1>
-                    <p>Visit my socials below for more information, I'm most responsive on linkedin</p>
-                    <p>Resume and email coming soon... (if you have any tips on using a custom domain email please reach out to me)</p>
-                    <div>
-                        <a style="margin-right: 0.25rem; color: black;" href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="icon fab fa-linkedin"></i></a>
-                        <a style="margin-right: 0.25rem; color: black;" href="https://github.com/cartwatson" target="_blank"><i class="icon fab fa-github"></i></a>
-                        <a style="margin-right: 0.25rem; color: black;" href="#contact"><i class="icon fas fa-envelope"></i></a>
-                        <a style="margin-right: 0.25rem; color: black;" href="#" target="_blank"><i class="icon fas fa-file"></i></a>
-                    </div>
-                </div>
-            </div>-->
-            
-            <!-- IDEA: background images, auto-carasoul big text with name and "software engineer"-->
             <section id="ABOUT">
                 <div class="flex-row" style="align-items: stretch; padding-top: 6rem; padding-bottom: 3rem;">
                     <div style="width: 50%;">
@@ -85,11 +69,11 @@
                     </div>
                     <div style="width: 50%; padding: 3rem; padding-right: 12rem; box-sizing: border-box;">
                         <h1>About Me</h1>
+                        <!-- TODO: CONTENT: fill this in  -->
                         <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in Dec 2023 with my Bachelor's Degree in Computer Science.</p>
                         <p>I have two years of part time experience working as a software engineer in the defense industry.  In that time I've learned a lot, mostly about coding and best practices and workflows and the like.</p>
                         <p>Outside of work I enjoy cycling, video games, and traveling! I am currently training for my first century (100mi) ride.  I am a huge Nintendo fan and enjoy playing their classics on my GameCube and their modern games on my Switch. My most recent trip was down to Sedona, Arizona, where I saw the Chapel of the Holy Cross and Devil's Bridge.</p>
                         <p>If you'd like to connect more send me a message on LinkedIn or contact me through the form below!</p>
-                        <!-- TODO: fill this in  -->
                         <!-- TODO: STYLE: maybe add tertiary button -->
                         <div class="flex-row" style="justify-content: space-between; width: 30%;">
                             <div class="secondary-button" style="width: max-content;">
@@ -112,7 +96,7 @@
                             <!-- TODO: CONTENT: get good photos -->
                             <!-- NOTE: HACK: the width for the icon width % is hardcoded, 8% per icon -->
                             <div class="card">
-                                <img src="media/dansautobarn.png" alt="">
+                                <img src="media/projects/dansautobarn.png" alt="">
                                 <div class="flex-col" style="justify-content: space-between;">
                                     <div class="flex-row" style="justify-content: space-between; align-items: center;">
                                         <h1>Dan's Auto Barn</h1>
@@ -211,6 +195,14 @@
                 </div>
             </section>
 
+            <!-- TODO: IMPLEMENT: skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
+            <section id="SKILLS" style="padding-top: 1rem; background-color: black;">
+                <h1 style="color: white; text-align: center;">SKILLS</h1>
+                <div class="flex-row" style="background-color: aqua;">
+
+                </div>
+            </section>
+
             <!-- IDEA: cards, horizontal when on desktop and vertical on mobile -->
             <section id="EXPERIENCE">
                 <h1 style="text-align: center;">PROFESSIONAL EXPERIENCE</h1>
@@ -221,15 +213,16 @@
 
                 </section>
             </section>
+
             
             <section id="CONTACT">
                 
             </section>
+
             <!-- SECTION: HIGHLIGHTS -->
             <!--     SUBSECTIONS: Organizations, awards, -->
             <!--     IDEA: just sprinkle these around; basically just filler text for in between sections -->
-            <!-- TODO: implement skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
-        </section>
+        </div>
 
         <!-- NOTE: this is super hack-y, need to figure out a better way to be responsive in the future -->
         <section id="mobile">

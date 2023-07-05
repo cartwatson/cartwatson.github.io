@@ -6,21 +6,16 @@ Created with vanilla html, css, and js
 
 ## TODO - prioritized
 [X] nav bar  
-[ ] about section  
+[X] about section  
 [ ] contact section  
 [ ] experience section  
 [ ] single project highlight  
-[ ] project overviews  
-[ ] fix id="content" margins  
+[X] project overviews  
+[X] fix id="content" margins  
 [X] redo footer  
 [X] favicon  
 [ ] fix mobile representation
-[ ] animation "software developer" on splast 
-
-## links
-* [card animations](https://stackoverflow.com/questions/55465325/animate-a-div-from-bottom-to-top-with-css)
-* [video background](https://www.w3schools.com/howto/howto_css_fullscreen_video.asp)
-* 
+[ ] animate "software developer" on splash 
 
 ## Credits
-* [black dot gif](https://shield.ai/)
+* [Black Dot Gif - Shield AI](https://shield.ai/)
