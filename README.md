@@ -16,6 +16,10 @@ Created with vanilla html, css, and js
 [X] favicon  
 [ ] fix mobile representation
 [ ] animate "software developer" on splash 
+[ ] add timeline for work experience and leadership
 
 ## Credits
 * [Black Dot Gif - Shield AI](https://shield.ai/)
+
+## temp reference
+* [git branch timeline deal](https://codepen.io/guttentag/pen/rOxzwQ)
