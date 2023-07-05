@@ -87,84 +87,125 @@
                         <h1>About Me</h1>
                         <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in Dec 2023 with my Bachelor's Degree in Computer Science.</p>
                         <p>I have two years of part time experience working as a software engineer in the defense industry.  In that time I've learned a lot, mostly about coding and best practices and workflows and the like.</p>
-                        <p>If you'd like to connect more send me a message on LinkedIn!</p>
+                        <p>Outside of work I enjoy cycling, video games, and traveling! I am currently training for my first century (100mi) ride.  I am a huge Nintendo fan and enjoy playing their classics on my GameCube and their modern games on my Switch. My most recent trip was down to Sedona, Arizona, where I saw the Chapel of the Holy Cross and Devil's Bridge.</p>
+                        <p>If you'd like to connect more send me a message on LinkedIn or contact me through the form below!</p>
                         <!-- TODO: fill this in  -->
                         <!-- TODO: STYLE: maybe add tertiary button -->
-                        <div class="secondary-button" style="width: max-content;">
-                            <a href="">LinkedIn</a>
+                        <div class="flex-row" style="justify-content: space-between; width: 30%;">
+                            <div class="secondary-button" style="width: max-content;">
+                                <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="secondary-button" style="width: max-content;">
+                                <a href="#CONTACT">Contact Me</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
             
-            <!-- IDEA: similar to experience, find a way to differentiate -->
             <section id="PROJECTS">
-                <div class="container" style="width: 70%;">
+                <div class="container" style="width: 85%;">
                     <div class="flex-col">
                         <h1 style="text-align: center; width: 100%; font-size: 3rem;">PORTFOLIO</h1>
-                        <div class="flex-row" style="width: 100%; justify-content: space-between;">
+                        <div class="flex-row" style="width: 100%; justify-content: space-between; flex-wrap: wrap;">
                             <!-- TODO: CONTENT: fill in with real projects -->
+                            <!-- TODO: CONTENT: get good photos -->
+                            <!-- NOTE: HACK: the width for the icon width % is hardcoded, 8% per icon -->
                             <div class="card">
-                                <!-- TODO: CONTENT: get good photos -->
                                 <img src="media/dansautobarn.png" alt="">
-                                <div class="flex-col card-overlay" style="justify-content: space-between;">
-                                    <div>
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
                                         <h1>Dan's Auto Barn</h1>
-                                        <p>A semester long project to build a demo car rental site with a team of four students.</p>
-                                    </div>
-                                    <div class="flex-row">
-                                        <div class="secondary-button">
-                                            <a href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank">Source Code</a>
-                                        </div>
-                                        <div class="secondary-button">
-                                            <a href="http://dansautobarn.com" target="_blank">Live Site</a>
-                                        </div>
-                                        <div class="secondary-button">
-                                            <a href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank">Demo Video</a>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                         </div>
                                     </div>
+                                    <hr>
+                                    <p>A semester long project to build a demo car rental site with a team of four students.</p>
+                                </div>
+                            </div>
+                            <!-- VR Heart Sync -->
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>VR Heart Sync</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; width: 16%;">
+                                            <!-- <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>VR Desc</p>
+                                </div>
+                            </div>
+                            <!-- GPT CYOA -->
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Choose Your Own Adventure</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; width: 16%;">
+                                            <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                            <a title="Video Demo"  href="https://youtu.be/Z_0t5PnRWzw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/Utah-State-University-Cybersecurity/HackUSU-CYOA" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>HackUSU GPT CYOA game</p>
+                                </div>
+                            </div>
+
+                            <!-- NOT SURE ON THESE YET -->
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Project Placeholder</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://youtu.be/Z_0t5PnRWzw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Placeholder description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="media/blackDotGifPoster.jpg" alt="">
-                                <div class="flex-col card-overlay" style="justify-content: space-between;">
-                                    <div>
-                                        <h1>Project Name</h1>
-                                        <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <div class="flex-row">
-                                        <div class="secondary-button">
-                                            <a href="" target="_blank">Source Code</a>
-                                        </div>
-                                        <div class="secondary-button">
-                                            <a href="" target="_blank">Live Site</a>
-                                        </div>
-                                        <div class="secondary-button">
-                                            <a href="" target="_blank">Demo Video</a>
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Project Placeholder</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                         </div>
                                     </div>
+                                    <hr>
+                                    <p>Placeholder description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
                             </div>
                             <div class="card">
                                 <img src="media/blackDotGifPoster.jpg" alt="">
-                                <div class="flex-col card-overlay" style="justify-content: space-between;">
-                                    <div>
-                                        <h1>Project Name</h1>
-                                        <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    </div>
-                                    <div class="flex-row">
-                                        <div class="secondary-button">
-                                            <a href="" target="_blank">Source Code</a>
-                                        </div>
-                                        <div class="secondary-button">
-                                            <a href="" target="_blank">Live Site</a>
-                                        </div>
-                                        <div class="secondary-button">
-                                            <a href="" target="_blank">Demo Video</a>
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Project Placeholder</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                         </div>
                                     </div>
+                                    <hr>
+                                    <p>Placeholder description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                                 </div>
                             </div>
+                            <!-- End of cards -->
                         </div>
                     </div>
                 </div>
