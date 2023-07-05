@@ -39,7 +39,8 @@
 
         <section id="content">
             <!-- TEMP: construction banner -->
-            <h1>Currently Under Construction</h1>
+            <h1>Carter Watson</h1>
+            <p>Pardon the dust, the site is currently under construction</p>
             <p>Visit my socials below for more information, I'm most responsive on linkedin</p>
             <p>Resume and email coming soon... (if you have any tips on using a custom domain email please reach out to me)</p>
             <div>
@@ -65,7 +66,30 @@
 
             </section>
             <section id="CONTACT">
-
+                <div class="reducedWidth flex-row">
+                    <div style="width: 50%;">
+                        <form action="scripts/send_email.php">
+                            <div class="flex-row" style="justify-content: space-between;">
+                                <div class="flex-col" style="width: 45%;">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your name">
+                                </div>
+                                <div class="flex-col" style="width: 45%;">
+                                    <label for="email">Email</label>
+                                    <input type="text" id="email" name="email" placeholder="Your email">
+                                </div>
+                            </div>
+                        
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
+                        
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+                    <div style="width: 50%;">
+                        <p style="color: white; padding: 1.5rem">placeholder - put an image here later</p>
+                    </div>
+                </div>
             </section>
             <!-- SECTION: HIGHLIGHTS -->
             <!--     SUBSECTIONS: Organizations, awards, -->
@@ -99,6 +123,6 @@
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
