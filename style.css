@@ -137,19 +137,49 @@ p {
     text-align: left;
 }
 
+section {
+    background-color: white;
+    padding-bottom: 5%;
+}
+
 .container {
     width: 70%;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
+}
+
+.card {
+    width: 33%;
+    height: 80vh;
+    position: relative; 
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-overlay {
+    box-sizing: border-box;
+    width: 100%;
+    height: 40%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom:1.5rem;
     
-    padding: 5%;
+    position: absolute;
+    bottom: 0rem;
+    
+    color: #f1f1f1;
+    background-color: rgba(128, 128, 128, 0.75);
 }
 
 #content {
     /* controls space between navbar and content */
     padding-top: 4rem;
     /* controls space between footer and content */
-    padding-bottom: 14rem; /* footer height ~16rem */
+    padding-bottom: 16rem; /* footer height ~16rem */
 }
 
 #page {
@@ -177,7 +207,6 @@ p {
     color: #f1f1f1;
     width: 100%;
 }
-  
 
 /* icons */
 .fab, .fas {
@@ -193,6 +222,11 @@ p {
 
 .fab:hover, .fas:hover {
     color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }
 
 /* Mobile */

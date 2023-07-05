@@ -18,13 +18,13 @@
                 <!-- Right justified -->
                 <div id="navbar-middle" class="flex-row" style="justify-content: space-around; width: 50%;">
                     <div class="button">
-                        <a href="#EXPERIENCE">EXPERIENCE</a>
+                        <a href="#ABOUT">ABOUT</a>
                     </div>
                     <div class="button">
                         <a href="#PROJECTS">PORTFOLIO</a>
                     </div>
                     <div class="button">
-                        <a href="#ABOUT">ABOUT</a>
+                        <a href="#EXPERIENCE">EXPERIENCE</a>
                     </div>
                     <div class="button">
                         <a href="#CONTACT">CONTACT</a>
@@ -37,29 +37,31 @@
             </div>
         </header>
 
-        <section id="content">
-            <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
-                <source src="media/blackDotGif.mp4" type="video/mp4">
-            </video>
-            
-            <!-- SECTION: SPLASH PAGE -->
-            <div class="video-overlay">
-                <div class="container">
-                    <p style="font-size: 1rem; margin: 0%;">Hi I'm</p>
-                    <h1 style="font-size: 6rem; margin: 0%;">Carter Watson</h1>
-                    <h3 id="title" style="font-size: 2rem; margin: 0%;">a software developer</h3>
-                    <div class="flex-row" style="margin-top: 1rem;">
-                        <div class="secondary-button">
-                            <a href="#PROJECTS">View My Projects</a>
-                        </div>
-                        <div class="secondary-button">
-                            <a href="#CONTACT">Get in Touch</a>
+        <section id="content" style="background-color: transparent;">
+            <section id="SPLASH" style="background-color: transparent;">
+                <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
+                    <source src="media/blackDotGif.mp4" type="video/mp4">
+                </video>
+                
+                <!-- SECTION: SPLASH PAGE -->
+                <div class="video-overlay">
+                    <div class="container">
+                        <p style="font-size: 1rem; margin: 0%;">Hi I'm</p>
+                        <h1 style="font-size: 6rem; margin: 0%;">Carter Watson</h1>
+                        <h3 id="title" style="font-size: 2rem; margin: 0%;">a software developer</h3>
+                        <div class="flex-row" style="margin-top: 1rem;">
+                            <div class="secondary-button">
+                                <a href="#PROJECTS">View My Projects</a>
+                            </div>
+                            <div class="secondary-button">
+                                <a href="#CONTACT">Get in Touch</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
             
-            <!-- SECTION: TEMP: CONSTRUCTION BANNER -->
+            <!-- SECTION: TEMP: CONSTRUCTION BANNER --> <!--
             <div style="background-color: white;">
                 <div class="container">
                     <h1>Currently Under Construction</h1>
@@ -72,22 +74,111 @@
                         <a style="margin-right: 0.25rem; color: black;" href="#" target="_blank"><i class="icon fas fa-file"></i></a>
                     </div>
                 </div>
-            </div>
+            </div>-->
+            
+            <!-- IDEA: background images, auto-carasoul big text with name and "software engineer"-->
+            <section id="ABOUT">
+                <div class="flex-row" style="align-items: stretch; padding-top: 6rem; padding-bottom: 3rem;">
+                    <div style="width: 50%;">
+                        <!-- TODO: FIX: replace with real photo later -->
+                        <img src="media/blackDotGifPoster.jpg" alt="eventually a photo of me" style="object-fit: fill;">
+                    </div>
+                    <div style="width: 50%; padding: 3rem; padding-right: 12rem; box-sizing: border-box;">
+                        <h1>About Me</h1>
+                        <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in Dec 2023 with my Bachelor's Degree in Computer Science.</p>
+                        <p>I have two years of part time experience working as a software engineer in the defense industry.  In that time I've learned a lot, mostly about coding and best practices and workflows and the like.</p>
+                        <p>If you'd like to connect more send me a message on LinkedIn!</p>
+                        <!-- TODO: fill this in  -->
+                        <!-- TODO: STYLE: maybe add tertiary button -->
+                        <div class="secondary-button" style="width: max-content;">
+                            <a href="">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- IDEA: similar to experience, find a way to differentiate -->
+            <section id="PROJECTS">
+                <div class="container" style="width: 70%;">
+                    <div class="flex-col">
+                        <h1 style="text-align: center; width: 100%; font-size: 3rem;">PORTFOLIO</h1>
+                        <div class="flex-row" style="width: 100%; justify-content: space-between;">
+                            <!-- TODO: CONTENT: fill in with real projects -->
+                            <div class="card">
+                                <!-- TODO: CONTENT: get good photos -->
+                                <img src="media/dansautobarn.png" alt="">
+                                <div class="flex-col card-overlay" style="justify-content: space-between;">
+                                    <div>
+                                        <h1>Dan's Auto Barn</h1>
+                                        <p>A semester long project to build a demo car rental site with a team of four students.</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <div class="secondary-button">
+                                            <a href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank">Source Code</a>
+                                        </div>
+                                        <div class="secondary-button">
+                                            <a href="http://dansautobarn.com" target="_blank">Live Site</a>
+                                        </div>
+                                        <div class="secondary-button">
+                                            <a href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank">Demo Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col card-overlay" style="justify-content: space-between;">
+                                    <div>
+                                        <h1>Project Name</h1>
+                                        <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <div class="secondary-button">
+                                            <a href="" target="_blank">Source Code</a>
+                                        </div>
+                                        <div class="secondary-button">
+                                            <a href="" target="_blank">Live Site</a>
+                                        </div>
+                                        <div class="secondary-button">
+                                            <a href="" target="_blank">Demo Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col card-overlay" style="justify-content: space-between;">
+                                    <div>
+                                        <h1>Project Name</h1>
+                                        <p>Project description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    </div>
+                                    <div class="flex-row">
+                                        <div class="secondary-button">
+                                            <a href="" target="_blank">Source Code</a>
+                                        </div>
+                                        <div class="secondary-button">
+                                            <a href="" target="_blank">Live Site</a>
+                                        </div>
+                                        <div class="secondary-button">
+                                            <a href="" target="_blank">Demo Video</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- IDEA: cards, horizontal when on desktop and vertical on mobile -->
             <section id="EXPERIENCE">
-                
+                <h1 style="text-align: center;">PROFESSIONAL EXPERIENCE</h1>
+
+
                 <section id="EDUCATION">
-                    
+                    <h1 style="text-align: center;">EDUCATION</h1>
+
                 </section>
-            </section>
-            <!-- IDEA: similar to experience, find a way to differentiate -->
-            <section id="PROJECTS">
-                
-            </section>
-            <!-- IDEA: background images, auto-carasoul big text with name and "software engineer"-->
-            <section id="ABOUT">
-                
             </section>
             
             <section id="CONTACT">
@@ -98,6 +189,7 @@
             <!--     IDEA: just sprinkle these around; basically just filler text for in between sections -->
             <!-- TODO: implement skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
         </section>
+
         <!-- NOTE: this is super hack-y, need to figure out a better way to be responsive in the future -->
         <section id="mobile">
             <!-- TEMP: construction banner -->
