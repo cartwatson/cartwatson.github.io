@@ -13,7 +13,7 @@ body {
     font-family: 'Consolas';
 }
 
-/* this is a hack to resuse navbar code in footer on a diff background */
+/* NOTE: HACK: resuse navbar code in footer on a diff background */
 #links a {
     color: white;
     text-decoration: none;
@@ -141,14 +141,4 @@ img {
 
 .icon:hover {
     color: var(--hack-green);
-}
-
-/* temp formatting */
-.reducedWidth {
-    padding: 2rem;
-    padding-left: 4rem;
-    padding-right: 4rem;
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
 }
