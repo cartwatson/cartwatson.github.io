@@ -14,6 +14,7 @@ body {
 }
 
 #navbar {
+    z-index: 1;
     width: 100%;
     height: 3rem;
     /* padding: 0.25rem; */
@@ -50,6 +51,7 @@ footer {
     width: 100%;
 }
 
+/* this is a hack to resuse navbar code in footer on a diff background */
 #links a {
     color: white;
     text-decoration: none;
@@ -96,6 +98,30 @@ footer {
     padding-right: 1rem;
 }
 
+.secondary-button {
+    background-color: rgba(128, 128, 128, 0.5);
+
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+
+    border-radius: 10px;
+}
+
+.secondary-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: var(--hack-green);
+    opacity: 1.0;
+}
+
+.secondary-button:hover a {
+    color: black;
+}
+
 .flex-row {
     display: flex;
     flex-direction: row;
@@ -111,11 +137,28 @@ p {
     text-align: left;
 }
 
+section {
+    background-color: white;
+    padding-bottom: 5%;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 30%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
 #content {
     /* controls space between navbar and content */
     padding-top: 4rem;
     /* controls space between footer and content */
-    padding-bottom: 20rem; /* footer height 16rem */
+    padding-bottom: 16rem; /* footer height ~16rem */
 }
 
 #page {
@@ -132,13 +175,15 @@ section[id="CONTACT"] {
 label {
     color: white;
 }
+
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type=text], textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
+    border-bottom: 2px solid var(--hack-green);
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
@@ -149,7 +194,6 @@ input[type=submit] {
     color: black;
     padding: 12px 20px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
 }
 
@@ -157,20 +201,48 @@ input[type=submit]:hover {
     background-color: var(--hack-green);
 }
 
-/* icons */
-.fab, .fas {
-    display: inline-block;
-    font-size: 1.5em;
-    font-weight: normal;
-    font-style: normal;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    color: var(--hack-green);
+/* video */
+#blackDotGif {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-.fab:hover, .fas:hover {
+.video-overlay {
+    position: relative;
+    top: 30vh;
+    height: 90vh;
+    color: #f1f1f1;
+    width: 100%;
+}
+
+hr {
+    display: inline-block;
+    width: 100%;
+}
+
+img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+/* icons */
+.icon {
+    display: inline-block;
+    font-size: 1.5em;
     color: black;
+}
+
+.icon:hover {
+    color: var(--hack-green);
 }
 
 /* temp formatting */
@@ -184,12 +256,20 @@ input[type=submit]:hover {
 }
 
 /* Mobile */
+#mobile {
+    display: none;
+    padding-top: 4rem;
+    padding-bottom: 22rem; /* footer height ~16rem */
+}
+
 @media screen and (max-width: 600px) {
     #navbar-middle {
         display: none;
     }
 
-    /* #content {
-        width: 100%;
-    } */
+    /* NOTE: HACK: change content for mobile */
+    #mobile { display: block; }
+    #content { display: none; }
+    #navbar { display: none; }
+    /* add something to not play video on mobile */
 } 

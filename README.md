@@ -6,16 +6,20 @@ Created with vanilla html, css, and js
 
 ## TODO - prioritized
 [X] nav bar  
-[ ] about section  
+[X] about section  
 [ ] contact section  
 [ ] experience section  
 [ ] single project highlight  
-[ ] project overviews  
-[ ] fix id="content" margins  
+[X] project overviews  
+[X] fix id="content" margins  
 [X] redo footer  
-[ ] favicon  
+[X] favicon  
 [ ] fix mobile representation
+[ ] animate "software developer" on splash 
+[ ] add timeline for work experience and leadership
 
-## links
-* [card animations](https://stackoverflow.com/questions/55465325/animate-a-div-from-bottom-to-top-with-css)
-* 
+## Credits
+* [Black Dot Gif - Shield AI](https://shield.ai/)
+
+## temp reference
+* [git branch timeline deal](https://codepen.io/guttentag/pen/rOxzwQ)

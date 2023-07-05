@@ -18,67 +18,222 @@
                 <!-- Right justified -->
                 <div id="navbar-middle" class="flex-row" style="justify-content: space-around; width: 50%;">
                     <div class="button">
+                        <a href="#ABOUT">ABOUT</a>
+                    </div>
+                    <div class="button">
+                        <a href="#PROJECTS">PORTFOLIO</a>
+                    </div>
+                    <div class="button">
                         <a href="#EXPERIENCE">EXPERIENCE</a>
-                    </div>
-                    <div class="button">
-                        <a href="#PROJECTS">PROJECTS</a>
-                    </div>
-                    <div class="button">
-                        <a href="#EDUCATION">EDUCATION</a>
                     </div>
                     <div class="button">
                         <a href="#CONTACT">CONTACT</a>
                     </div>
                 </div>
-                <!-- TODO: turn into hamburger menu -->
+                <!-- TODO: do something with this or get rid of it -->
                 <div class="button edge-button">
-                    <a>MENU</a>
+                    <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LINKEDIN</a>
                 </div>
             </div>
         </header>
 
-        <section id="content">
-            <!-- TEMP: construction banner -->
-            <h1>Carter Watson</h1>
-            <p>Pardon the dust, the site is currently under construction</p>
-            <p>Visit my socials below for more information, I'm most responsive on linkedin</p>
-            <p>Resume and email coming soon... (if you have any tips on using a custom domain email please reach out to me)</p>
-            <div>
-                <a style="margin-right: 0.25rem; color: black;" href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="icon fab fa-linkedin"></i></a>
-                <a style="margin-right: 0.25rem; color: black;" href="https://github.com/cartwatson" target="_blank"><i class="icon fab fa-github"></i></a>
-                <!--<a style="margin-right: 0.25rem; color: black;" href="mailto:your.email@example.com"><i class="icon fas fa-envelope"></i></a>
-                <a style="margin-right: 0.25rem; color: black;" href="#" target="_blank"><i class="icon fas fa-file"></i></a>-->
-            </div>
-
-            <!-- IDEA: background images, auto-carasoul big text with name and "software engineer"-->
-            <section id="ABOUT">
-
+        <div id="content">
+            <section id="SPLASH" style="background-color: transparent;">
+                <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
+                    <source src="media/blackDotGif.mp4" type="video/mp4">
+                </video>
+                
+                <!-- SECTION: SPLASH PAGE -->
+                <div class="video-overlay">
+                    <div class="container">
+                        <p style="font-size: 1rem; margin: 0%;">Hi I'm</p>
+                        <h1 style="font-size: 6rem; margin: 0%;">Carter Watson</h1>
+                        <h3 id="title" style="font-size: 2rem; margin: 0%;">a software developer</h3>
+                        <div class="flex-row" style="margin-top: 1rem;">
+                            <div class="secondary-button">
+                                <a href="#PROJECTS">View My Projects</a>
+                            </div>
+                            <div class="secondary-button">
+                                <a href="#CONTACT">Get in Touch</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
+            
+            <section id="ABOUT">
+                <div class="flex-row" style="align-items: center; padding-top: 6rem; padding-bottom: 3rem;">
+                    <div style="width: 50%;">
+                        <!-- TODO: FIX: replace with real photo later -->
+                        <img src="media/blackDotGifPoster.jpg" alt="eventually a photo of me" style="object-fit: fill;">
+                    </div>
+                    <div style="width: 50%; padding: 3rem; padding-right: 12rem; box-sizing: border-box;">
+                        <h1>About Me</h1>
+                        <!-- TODO: CONTENT: fill this in  -->
+                        <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in Dec 2023 with my Bachelor's Degree in Computer Science.</p>
+                        <p>I have two years of part time experience working as a software engineer in the defense industry.  In that time I've learned a lot, mostly about coding and best practices and workflows and the like.</p>
+                        <p>Outside of work I enjoy cycling, video games, and traveling! I am currently training for my first century (100mi) ride.  I am a huge Nintendo fan and enjoy playing their classics on my GameCube and their modern games on my Switch. My most recent trip was down to Sedona, Arizona, where I saw the Chapel of the Holy Cross and Devil's Bridge.</p>
+                        <p>If you'd like to connect more send me a message on LinkedIn or contact me through the form below!</p>
+                        <!-- TODO: STYLE: maybe add tertiary button -->
+                        <div class="flex-row" style="justify-content: left; width: 100%;">
+                            <div class="secondary-button" style="min-width: min-content;">
+                                <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="secondary-button" style="min-width: min-content;">
+                                <a href="#CONTACT">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="PROJECTS">
+                <div class="container" style="width: 85%;">
+                    <div class="flex-col">
+                        <h1 style="text-align: center; width: 100%; font-size: 3rem;">PORTFOLIO</h1>
+                        <div class="flex-row" style="width: 100%; justify-content: space-between; flex-wrap: wrap;">
+                            <!-- TODO: CONTENT: fill in with real projects -->
+                            <!-- TODO: CONTENT: get good photos -->
+                            <!-- NOTE: HACK: the width for the icon width % is hardcoded, 8% per icon -->
+                            <div class="card">
+                                <img src="media/projects/dansautobarn.png" alt="Screenshot of dansautobarn.com">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Dan's Auto Barn</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; min-width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>A semester long project to build a demo car rental site with a team of four students.</p>
+                                </div>
+                            </div>
+                            <!-- VR Heart Sync -->
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>VR Heart Sync</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; min-width: 16%;">
+                                            <!-- <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>VR Desc</p>
+                                </div>
+                            </div>
+                            <!-- GPT CYOA -->
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Choose Your Own Adventure</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; min-width: 16%;">
+                                            <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                            <a title="Video Demo"  href="https://youtu.be/Z_0t5PnRWzw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/Utah-State-University-Cybersecurity/HackUSU-CYOA" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>HackUSU GPT CYOA game</p>
+                                </div>
+                            </div>
+
+                            <!-- NOT SURE ON THESE YET -->
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Project Placeholder</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; min-width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://youtu.be/Z_0t5PnRWzw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Placeholder description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Project Placeholder</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: center; min-width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Placeholder description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="media/blackDotGifPoster.jpg" alt="">
+                                <div class="flex-col" style="justify-content: space-between;">
+                                    <div class="flex-row" style="justify-content: space-between; align-items: center;">
+                                        <h1>Project Placeholder</h1>
+                                        <div class="flex-row" style="justify-content: space-between; align-items: flex-start; min-width: 24%;">
+                                            <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                            <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                            <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <p>Placeholder description. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                </div>
+                            </div>
+                            <!-- End of cards -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TODO: IMPLEMENT: skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
+            <section id="SKILLS" style="padding-top: 1rem; background-color: black;">
+                <h1 style="color: white; text-align: center;">SKILLS</h1>
+                <div class="flex-row" style="background-color: aqua;">
+
+                </div>
+            </section>
+
             <!-- IDEA: cards, horizontal when on desktop and vertical on mobile -->
             <section id="EXPERIENCE">
+                <h1 style="text-align: center;">PROFESSIONAL EXPERIENCE</h1>
 
-            </section>
-            <!-- IDEA: similar to experience, find a way to differentiate -->
-            <section id="PROJECTS">
 
-            </section>
-            <section id="EDUCATION">
+                <section id="EDUCATION">
+                    <h1 style="text-align: center;">EDUCATION</h1>
 
+                </section>
             </section>
+
+            
             <section id="CONTACT">
-                <div class="reducedWidth flex-row">
+                <h1 style="color: white; text-align: center; padding-top: 5rem;">Get In Touch!</h1>
+
+                <div class="container flex-row" style="justify-content: center;">
                     <div style="width: 50%;">
                         <form action="scripts/send_email.php">
                             <div class="flex-row" style="justify-content: space-between;">
                                 <div class="flex-col" style="width: 45%;">
-                                    <label for="name">Name</label>
-                                    <input type="text" id="name" name="name" placeholder="Your name">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" placeholder="First Last">
                                 </div>
                                 <div class="flex-col" style="width: 45%;">
-                                    <label for="email">Email</label>
-                                    <input type="text" id="email" name="email" placeholder="Your email">
+                                    <label for="email">Email *</label>
+                                    <input type="text" id="email" name="email" placeholder="name@email.com">
                                 </div>
                             </div>
+
+                            <label for="company">Company</label>
+                            <input type="text" id="company" name="company" placeholder="XYZ inc.">
                         
                             <label for="message">Message</label>
                             <textarea id="message" name="message" placeholder="Your message" style="height:200px"></textarea>
@@ -86,14 +241,34 @@
                             <input type="submit" value="Submit">
                         </form>
                     </div>
-                    <div style="width: 50%;">
-                        <p style="color: white; padding: 1.5rem">placeholder - put an image here later</p>
+                    <div style="width: 50%;" style="align-items: center;">
+                        <img src="media/paper-airplane.png" alt="Line drawing of a paper airplane" style="object-fit: contain;">
                     </div>
                 </div>
             </section>
+
             <!-- SECTION: HIGHLIGHTS -->
             <!--     SUBSECTIONS: Organizations, awards, -->
             <!--     IDEA: just sprinkle these around; basically just filler text for in between sections -->
+        </div>
+
+        <!-- NOTE: this is super hack-y, need to figure out a better way to be responsive in the future -->
+        <section id="mobile">
+            <!-- TEMP: construction banner -->
+            <div style="background-color: white;">
+                <div class="container">
+                    <h1>Carter Watson</h1>
+                    <p>Pardon the dust, we're currently under construction for mobile viewing</p>
+                    <p>Check out the site on a desktop for a more polished experience</p>
+                    <p>Visit my socials below for more information, I'm most responsive on linkedin</p>
+                    <div>
+                        <a style="margin-right: 0.25rem; color: black;" href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="icon fab fa-linkedin"></i></a>
+                        <a style="margin-right: 0.25rem; color: black;" href="https://github.com/cartwatson" target="_blank"><i class="icon fab fa-github"></i></a>
+                        <a style="margin-right: 0.25rem; color: black;" href="#contact"><i class="icon fas fa-envelope"></i></a>
+                        <a style="margin-right: 0.25rem; color: black;" href="#" target="_blank"><i class="icon fas fa-file"></i></a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <footer>
@@ -108,7 +283,7 @@
                         <a href="https://www.github.com/cartwatson" target="_blank">GITHUB</a>
                     </div>
                     <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
-                        <a href="mailto:your.email@example.com" target="_blank">EMAIL</a>
+                        <a href="#contact">EMAIL</a>
                     </div>
                     <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
                         <a href="#" target="_blank">RESUME</a>
