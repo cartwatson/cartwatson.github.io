@@ -1,0 +1,18 @@
+/* Mobile */
+#mobile {
+    display: none;
+    padding-top: 4rem;
+    padding-bottom: 22rem; /* footer height ~16rem */
+}
+
+@media screen and (max-width: 600px) {
+    #navbar-middle {
+        display: none;
+    }
+
+    /* NOTE: HACK: change content for mobile */
+    #mobile { display: block; }
+    #content { display: none; }
+    #navbar { display: none; }
+    /* add something to not play video on mobile */
+} 

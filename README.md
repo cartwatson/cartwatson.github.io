@@ -9,6 +9,7 @@ Created with vanilla html, css, and js
 [X] about section  
 [X] contact section  
     [ ] fix submission status
+    [X] clear form  
 [ ] experience section  
 [ ] single project highlight  
 [X] project overviews  

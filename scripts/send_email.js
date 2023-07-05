@@ -65,6 +65,13 @@ function submitFormHandler(evt) {
         request.open(method, action)
         request.send(formData)
 
+        // clear fields
+        formFields[name].value = '';
+        formFields[email].value = '';
+        formFields[company].value = '';
+        formFields[message].value = '';
+
+        // display success message
         errorMessage.style.color = "green";
         errorMessage.innerText = "Success! I'll reach out to you soon";
     }
