@@ -19,6 +19,7 @@ Created with vanilla html, css, and js
 [ ] fix mobile representation
 [ ] animate "software developer" on splash 
 [ ] add timeline for work experience and leadership
+[ ] BUG: last project is cut off on mobile
 
 ## Credits
 * [Black Dot Gif - Shield AI](https://shield.ai/)
