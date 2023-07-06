@@ -1,0 +1,48 @@
+/* ABOUT */
+#ABOUT > .flex-row > * {
+    width: 50%;
+}
+
+#about-me-text {
+    padding-left: 3rem;
+    padding-right: 12rem;
+    box-sizing: border-box;
+}
+
+/* PROJECTS */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2.5%;
+    
+    /* TODO: HACK: there's a better way to do this */
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project-title-bar {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: baseline;
+    height: auto;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-container > a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* CONTACT */
+#CONTACT > .flex-row > * {
+    width: 50%;
+}

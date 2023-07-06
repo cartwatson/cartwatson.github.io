@@ -6,13 +6,84 @@
 }
 
 @media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    /* NOTE: HACK: change content for mobile */
+    /* #mobile { display: block; }
+    #content { display: none; }
+    #navbar { display: none; } */
+    /* add something to not play video on mobile */
+
+    /* NAVAR */
     #navbar-middle {
         display: none;
     }
 
-    /* NOTE: HACK: change content for mobile */
-    #mobile { display: block; }
-    #content { display: none; }
-    #navbar { display: none; }
-    /* add something to not play video on mobile */
+    #hamburger {
+        display: block;
+    }
+
+    #navbar:hover #hamburger {
+        color: white;
+    }
+
+    #navbar:hover #hamburger:hover {
+        color: var(--hack-green);
+    }
+
+    #anti-hamburger {
+        display: none;
+    }
+
+    /* ABOUT */
+    #ABOUT > .flex-row {
+        flex-direction: column;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #ABOUT > .flex-row > * {
+        width: 100%;
+    }
+
+    #about-me-text {
+        padding: 0;
+        padding-left:  1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    /* PROJECTS */
+
+
+    /* CONTACT */
+    #CONTACT > .flex-row > * {
+        width: 100%;
+    }
+
+    #contact-img {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer > .flex-row {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    footer > .bottom-flex {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+    }
+    
+    footer > .bottom-flex > .copyright {
+        align-self: center;
+    }
+
+    section[id="CONTACT"] {
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
 } 
