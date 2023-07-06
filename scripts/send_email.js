@@ -72,8 +72,8 @@ function submitFormHandler(evt) {
         formFields[message].value = '';
 
         // display success message
-        errorMessage.style.color = "green";
-        errorMessage.innerText = "Success! I'll reach out to you soon";
+        errorMessage.style.color = "white";
+        errorMessage.innerText = "Success. I'll get back to you soon!";
     }
 }
 
