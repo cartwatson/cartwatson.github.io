@@ -5,17 +5,27 @@ available at [cartwatson.com](http://www.cartwatson.com)
 Created with vanilla html, css, and js  
 
 ## TODO - prioritized
-[X] nav bar  
-[ ] about section  
-[ ] contact section  
-[ ] experience section  
-[ ] single project highlight  
-[ ] project overviews  
-[ ] fix id="content" margins  
-[X] redo footer  
-[ ] favicon  
-[ ] fix mobile representation
+- [ ] experience section  
+- [ ] education section  
+- [ ] skills section  
+- [ ] awards/highlights section  
+- [X] fix mobile representation  
+  - [ ] BUG: last project is cut off on mobile  
+- [ ] animate "software developer" on splash  
+- [ ] single project highlight  
+- [ ] add timeline for work experience and leadership  
+- [X] project overviews  
+- [X] fix id="content" margins  
+- [X] redo footer  
+- [X] favicon  
+- [X] nav bar  
+- [X] about section  
+- [X] contact section  
+  - [X] fix submission status  
+  - [X] clear form  
 
-## links
-* [card animations](https://stackoverflow.com/questions/55465325/animate-a-div-from-bottom-to-top-with-css)
-* 
+## Credits
+* [Black Dot Gif - Shield AI](https://shield.ai/)
+
+## temp reference
+* [git branch timeline deal](https://codepen.io/guttentag/pen/rOxzwQ)
