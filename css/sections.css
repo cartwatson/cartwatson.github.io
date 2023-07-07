@@ -1,3 +1,24 @@
+/* SPLASH */
+section[id="SPLASH"] {
+    position: relative;
+}
+
+#blackDotGif {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+
+.overlay {
+    padding-top: 50vh;
+    height: 90vh;
+    color: #f1f1f1;
+    width: 100%;
+}
+
+
 /* ABOUT */
 #ABOUT > .flex-row > * {
     width: 50%;
@@ -9,11 +30,15 @@
     box-sizing: border-box;
 }
 
+
 /* PROJECTS */
 .project-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2.5%;
+    /* gap: 2.5%; */
+    column-gap: 2.5%;
+    grid-auto-rows: min-content;
+    max-width: 1200px; /* constrain to three columns */
     
     /* TODO: HACK: there's a better way to do this */
     width: 85%;
@@ -41,6 +66,7 @@
     margin-left: 5px;
     margin-right: 5px;
 }
+
 
 /* CONTACT */
 #CONTACT > .flex-row > * {
