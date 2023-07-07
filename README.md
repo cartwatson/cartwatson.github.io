@@ -8,6 +8,7 @@ Created with vanilla html, css, and js
 - [ ] experience section  
 - [ ] education section  
 - [ ] skills section  
+  - [ ] add skills to experience, projects, and education sections  
 - [ ] awards/highlights section  
 - [X] fix mobile representation  
   - [ ] BUG: last project is cut off on mobile  
