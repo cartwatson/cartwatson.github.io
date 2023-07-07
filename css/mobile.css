@@ -1,5 +1,5 @@
 /* Half Scren */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     /* SPLASH */
     .overlay {
         padding-top: 30vh;

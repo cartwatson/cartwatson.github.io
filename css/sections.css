@@ -34,11 +34,11 @@ section[id="SPLASH"] {
 /* PROJECTS */
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     /* gap: 2.5%; */
     column-gap: 2.5%;
     grid-auto-rows: min-content;
-    max-width: 1200px; /* constrain to three columns */
+    max-width: 1500px; /* constrain to three columns */
     
     /* TODO: HACK: there's a better way to do this */
     width: 85%;
