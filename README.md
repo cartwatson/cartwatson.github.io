@@ -10,11 +10,11 @@ Created with vanilla html, css, and js
 - [ ] skills section  
   - [ ] add skills to experience, projects, and education sections  
 - [ ] awards/highlights section  
-- [X] fix mobile representation  
-  - [ ] BUG: last project is cut off on mobile  
 - [ ] animate "software developer" on splash  
 - [ ] single project highlight  
 - [ ] add timeline for work experience and leadership  
+- [X] fix mobile representation  
+  - [X] BUG: last project is cut off on mobile  
 - [X] project overviews  
 - [X] fix id="content" margins  
 - [X] redo footer  
