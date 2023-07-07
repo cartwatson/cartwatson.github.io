@@ -1,8 +1,8 @@
 /* Ultrawide */
-@media screen and (min-width: 2000) {
+@media screen and (min-width: 2000px) {
     .ultrawide-container {
         margin: auto;
-        max-width: 50%;
+        max-width: 1600px;
     }
 }
 
