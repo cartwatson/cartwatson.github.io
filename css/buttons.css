@@ -1,9 +1,9 @@
 .button {
     background-color: transparent;
-    height: auto;
     padding: 0.5rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+    min-width: min-content;
 }
 
 .button > a {
@@ -46,6 +46,7 @@
     margin: 0.25rem;
 
     border-radius: 10px;
+    min-width: min-content;
 }
 
 .secondary-button a {
@@ -60,4 +61,28 @@
 
 .secondary-button:hover a {
     color: black;
+}
+
+.tertiary-button {
+    background-color: var(--hack-green);
+
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.25rem;
+
+    border-radius: 10px;
+    min-width: min-content;
+}
+
+.tertiary-button a {
+    text-decoration: none;
+    color: black;
+}
+
+.tertiary-button:hover {
+    background-color: black;
+}
+
+.tertiary-button:hover a {
+    color: var(--hack-green);
 }
