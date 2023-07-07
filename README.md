@@ -5,24 +5,24 @@ available at [cartwatson.com](http://www.cartwatson.com)
 Created with vanilla html, css, and js  
 
 ## TODO - prioritized
-[ ] experience section  
-[ ] education section  
-[ ] skills section  
-[ ] awards/highlights section  
-[X] fix mobile representation  
-    [ ] BUG: last project is cut off on mobile  
-[ ] animate "software developer" on splash  
-[ ] single project highlight  
-[ ] add timeline for work experience and leadership  
-[X] project overviews  
-[X] fix id="content" margins  
-[X] redo footer  
-[X] favicon  
-[X] nav bar  
-[X] about section  
-[X] contact section  
-    [X] fix submission status  
-    [X] clear form  
+- [ ] experience section  
+- [ ] education section  
+- [ ] skills section  
+- [ ] awards/highlights section  
+- [X] fix mobile representation  
+  - [ ] BUG: last project is cut off on mobile  
+- [ ] animate "software developer" on splash  
+- [ ] single project highlight  
+- [ ] add timeline for work experience and leadership  
+- [X] project overviews  
+- [X] fix id="content" margins  
+- [X] redo footer  
+- [X] favicon  
+- [X] nav bar  
+- [X] about section  
+- [X] contact section  
+  - [X] fix submission status  
+  - [X] clear form  
 
 ## Credits
 * [Black Dot Gif - Shield AI](https://shield.ai/)
