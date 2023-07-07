@@ -1,3 +1,11 @@
+/* Ultrawide */
+@media screen and (min-width: 2000) {
+    .ultrawide-container {
+        margin: auto;
+        max-width: 50%;
+    }
+}
+
 /* Half Scren */
 @media screen and (max-width: 1000px) {
     /* SPLASH */

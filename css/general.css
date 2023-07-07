@@ -16,7 +16,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     font-family: 'Consolas';
-    max-width: 2500px;
 }
 
 .title {
@@ -110,7 +109,7 @@ hr {
 }
 
 img {
-    object-fit: fill;
+    object-fit:fill;
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
