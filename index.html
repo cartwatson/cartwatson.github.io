@@ -53,7 +53,7 @@
                     <div class="container">
                         <p style="font-size: 1rem; margin: 0%;">Hi I'm</p>
                         <h1 style="font-size: 6rem; margin: 0%;">Carter Watson</h1>
-                        <h3 id="title" style="font-size: 2rem; margin: 0%;">a software developer</h3>
+                        <h3 id="title" style="font-size: 2rem; margin: 0%;">a software engineer</h3>
                         <div class="flex-row" style="margin-top: 1rem;">
                             <div class="secondary-button">
                                 <a href="#PROJECTS">View My Projects</a>
@@ -71,18 +71,19 @@
                 <div class="flex-row" style="align-items: center;">
                     <div>
                         <!-- TODO: FIX: replace with real photo later -->
-                        <img src="media/blackDotGifPoster.jpg" alt="eventually a photo of me" style="object-fit: fill;">
+                        <img src="media/lakeLouise.png" alt="Lake Louise in Banff National Park" style="object-fit: fill;">
                     </div>
                     <div id="about-me-text">
-                        <!-- TODO: CONTENT: fill this in  -->
-                        <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in Dec 2023 with my Bachelor's Degree in Computer Science.</p>
-                        <p>I have two years of part time experience working as a software engineer in the defense industry.  In that time I've learned a lot, mostly about coding and best practices and workflows and the like.</p>
-                        <p>Outside of work I enjoy cycling, video games, and traveling! I am currently training for my first century (100mi) ride.  I am a huge Nintendo fan and enjoy playing their classics on my GameCube and their modern games on my Switch. My most recent trip was down to Sedona, Arizona, where I saw the Chapel of the Holy Cross and Devil's Bridge.</p>
+                        <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in December 2023 with my Bachelor's Degree in Computer Science.</p>
+                        <p>I have two years of experience working as a software engineer in the defense industry.  In that time I've learned a lot, programming best practices, CI/CD pipelines, and the software development process.</p>
+                        <p>Outside of work I enjoy cycling, video games, and traveling! I just completed my first century (100mi) ride.  I am a huge Nintendo fan and enjoy playing their games on my GameCube and Switch. My most recent trip was to Banff National Park, where my family and I visited Lake Louise and hiked to the Lake Agnes Tea House.</p>
                         <p>If you'd like to connect more send me a message on LinkedIn or contact me through the form below!</p>
-                        <!-- TODO: STYLE: maybe add tertiary button -->
                         <div class="flex-row" style="justify-content: left; width: 100%;">
                             <div class="tertiary-button">
                                 <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="tertiary-button">
+                                <a href="media/PublicResume-CarterWatson.pdf" target="_blank">My Resume</a>
                             </div>
                             <div class="tertiary-button">
                                 <a href="#CONTACT">Contact Me</a>
@@ -94,8 +95,6 @@
             
             <section id="PROJECTS">
                 <h1 class="title">PORTFOLIO</h1>
-                <!-- TODO: CONTENT: fill in with real projects -->
-                <!-- TODO: CONTENT: get good photos -->
                 <div class="project-container">
                     <!-- Dans Auto Barn -->
                     <div class="card">
@@ -110,7 +109,7 @@
                                 </div>
                             </div>
                             <hr>
-                            <p>A semester long project to build a demo car rental site with a team of four students.  Lead an 4-person agile-scrum team over four months to create a demo car rental site according to requirements given.  Built using Django, Bootstrap5, and Vue.js.</p>
+                            <p>Lead an 4-person agile-scrum team as scrum master over four months to create a dynamic car rental site according to requirements given.  Built using Django, Bootstrap5, and Vue.js.</p>
                         </div>
                     </div>
                     <!-- VR Heart Sync -->
@@ -126,7 +125,7 @@
                                 </div>
                             </div>
                             <hr>
-                            <p>A VR project that leverages a peripheral device to change the experience based on user heart rate info.  Pioneered the FOCUS technique to allow easier/harder selection based on user fatigue levels. Built with Unity and C#.</p>
+                            <p>A VR project that leverages a peripheral device to change the experience based on user heart rate info.  Pioneered the FOCUS technique to allow easier/harder selection based on user fatigue levels. Built with Unity and C# for the Meta Quest 2.</p>
                         </div>
                     </div>
                     <!-- GPT CYOA -->
@@ -198,12 +197,10 @@
             </section>
 
             <!-- TODO: IMPLEMENT: skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
-            <!-- <section id="SKILLS" style="padding-top: 1rem;">
+            <!--<section id="SKILLS" style="padding-top: 1rem;">
                 <h1 style="text-align: center;">SKILLS</h1>
-                <div class="flex-row" style="background-color: aqua;">
-
-                </div>
-            </section> -->
+  
+            </section>-->
 
             <!-- IDEA: cards, horizontal when on desktop and vertical on mobile -->
             <!--
@@ -221,7 +218,7 @@
             <section id="CONTACT">
                 <h1 style="color: white; text-align: center;">Get In Touch!</h1>
                 <p style="color: white; text-align: center;">I'll get back to you as soon as possible!</p>
-                <div class="container flex-row" style="justify-content: center;">
+                <div class="container flex-row ultrawide-container" style="justify-content: center;">
                     <div>
                         <form id="gform" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSde27gQxucEQXTG_4wamHr5QMeruryu2ulxZUJbU3qbqV5EBA/formResponse?" target="hidden_iframe" style="color: white;">
                             <div class="flex-row" style="justify-content: space-between;">
@@ -255,8 +252,9 @@
 
             <!-- SECTION: HIGHLIGHTS -->
             <!--     SUBSECTIONS: Organizations, awards, -->
+            <!-- TODO: HACK: currently just a spacer section-->
              <section id="AWARDS">
-                
+
             </section>
         </div>
 
@@ -271,9 +269,6 @@
                     <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
                         <a href="https://www.github.com/cartwatson" target="_blank">GITHUB</a>
                     </div>
-                    <!--<div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
-                        <a href="#contact">EMAIL</a>
-                    </div>-->
                     <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
                         <a href="media/PublicResume-CarterWatson.pdf" target="_blank">RESUME</a>
                     </div>
