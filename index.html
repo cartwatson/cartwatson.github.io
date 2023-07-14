@@ -20,21 +20,13 @@
                     <a href="/">CARTER WATSON</a>
                 </div>
                 <div id="navbar-middle" class="flex-row" style="justify-content: space-around; width: 50%;">
-                    <div class="button">
-                        <a href="#ABOUT">ABOUT</a>
-                    </div>
-                    <div class="button">
-                        <a href="#PROJECTS">PORTFOLIO</a>
-                    </div>
-                    <div class="button">
-                        <a href="#EXPERIENCE">EXPERIENCE</a>
-                    </div>
-                    <div class="button">
-                        <a href="#CONTACT">CONTACT</a>
-                    </div>
+                    <div class="button"><a href="#ABOUT">ABOUT</a></div>
+                    <div class="button"><a href="#EXPERIENCE">EXPERIENCE</a></div>
+                    <div class="button"><a href="#PROJECTS">PORTFOLIO</a></div>
+                    <div class="button"><a href="#CONTACT">CONTACT</a></div>
                 </div>
                 <div class="button edge-button">
-                    <a id="anti-hamburger" href="https://www.linkedin.com/in/cartwatson" target="_blank">LINKEDIN</a>
+                    <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LINKEDIN</a>
                 </div>
             </div>
         </header>
@@ -90,6 +82,43 @@
                 </div>
             </section>
             
+            <!-- IDEA: cards, horizontal when on desktop and vertical on mobile -->
+            <section id="EXPERIENCE" style="background-color: rgb(237, 237, 237);">
+                <h1 class="title" style="text-align: center;">EXPERIENCE</h1>
+                <p style="text-align: center;">Check out my linkedin for more details!</p>
+                <div class="flex-col work-container">
+                    <div class="flex-row">
+                        <div class="work-card flex-col">
+                            <img src="media/experience/Space_Dynamics_Laboratory.jpg" alt="The Space Dynamics Laboratory in Logan Ut">
+                            <h1><a href="https://www.linkedin.com/in/cartwatson/#experience">Space Dynamics Laboratory</a></h1>
+                            <h3>Software Engineer</h3>
+                            <hr>
+                        </div>
+                        <div class="work-card flex-col">
+                            <img src="media/experience/PetersensInc.jpg" alt="Petersen Inc in Ogden Ut">
+                            <h1><a href="https://www.linkedin.com/in/cartwatson/#experience">Petersen Inc</a></h1>
+                            <h3>Program Management Intern</h3>
+                            <hr>
+                        </div>
+                        <div class="work-card flex-col">
+                            <img src="media/experience/mpwr.jpg" alt="solar panels on a roof">
+                            <h1><a href="https://www.linkedin.com/in/cartwatson/#experience">MPWR</a></h1>
+                            <h3>Sales Representative</h3>
+                            <hr>
+                        </div>
+                    </div>
+    
+                    <div id="EDUCATION">
+                        <div class="work-card flex-col">
+                            <img src="media/experience/usu.jpg" alt="The Space Dynamics Laboratory in Logan Ut" style="max-height: 400px; object-fit: cover;">
+                            <h1><a href="https://www.linkedin.com/in/cartwatson/#education">Utah State University</a></h1>
+                            <h3>Bachelor's of Computer Science</h3>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="PROJECTS">
                 <h1 class="title">PORTFOLIO</h1>
                 <div class="project-container">
@@ -192,28 +221,10 @@
                     <!-- End of cards -->
                 </div>
             </section>
-
-            <!-- TODO: IMPLEMENT: skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
-            <!--<section id="SKILLS" style="padding-top: 1rem;">
-                <h1 style="text-align: center;">SKILLS</h1>
-  
-            </section>-->
-
-            <!-- IDEA: cards, horizontal when on desktop and vertical on mobile -->
-            <!--
-            <section id="EXPERIENCE">
-                <h1 style="text-align: center;">PROFESSIONAL EXPERIENCE</h1>
-
-                <section id="EDUCATION">
-                    <h1 style="text-align: center;">EDUCATION</h1>
-
-                </section>
-            </section>
-            -->
             
             <!-- TODO: DESGIN: visual weight feels weird in this section -->
             <section id="CONTACT">
-                <h1 style="color: white; text-align: center;">Get In Touch!</h1>
+                <h1 class="title" style="color: white;">Get In Touch!</h1>
                 <p style="color: white; text-align: center;">I'll get back to you as soon as possible!</p>
                 <div class="container flex-row ultrawide-container" style="justify-content: center;">
                     <div>
@@ -247,11 +258,17 @@
                 </div>
             </section> 
 
+            <!-- TODO: IMPLEMENT: skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
+            <section id="SKILLS" style="background-color: var(--hack-green)">
+                <h1 style="text-align: center;">SKILLS & TECHNOLOGIES</h1>
+                <p style="text-align: center;">Section coming soon! Working on the design now! Implement scroller that scrolls through all my skills/technologies</p>
+            </section>
+
             <!-- SECTION: HIGHLIGHTS -->
             <!--     SUBSECTIONS: Organizations, awards, -->
-            <!-- TODO: HACK: currently just a spacer section-->
-             <section id="AWARDS">
-
+            <section id="AWARDS">
+                <h1 class="title">Career Highlights</h1>
+                <p style="text-align: center;">Section coming soon! Working on the design now!</p>
             </section>
         </div>
 

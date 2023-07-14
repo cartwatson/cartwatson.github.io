@@ -67,6 +67,17 @@
         display: none;
     }
 
+    /* EXPERIENCE */
+    #EXPERIENCE .flex-row {
+        flex-direction: column;
+        justify-content: start;
+        display: block;
+    } 
+    
+    .work-container {
+        width: 100%;
+    }
+
 
     /* PROJECTS */
     .project-container {
