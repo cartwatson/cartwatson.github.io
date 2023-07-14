@@ -9,7 +9,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    transition: top 0.3s; /* Transition effect when sliding down (and up)
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
 
     /* animation color */
     transition: background-color 0.25s ease-in-out;
@@ -24,18 +24,11 @@
     color: white;
 }
 
-#hamburger {
-    display: none;
-}
-
 footer {
-    /* position: absolute;
-    bottom: 0; */
-    height: auto;
-
     padding: 0.5rem;
     background-color: black;
     width: 100%;
+    border-top: 4px solid var(--hack-green);
 }
 
 footer > .flex-row {

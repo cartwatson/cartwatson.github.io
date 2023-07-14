@@ -63,24 +63,19 @@
     /* add something to not play video on mobile */
 
     /* NAVAR */
-    #navbar-middle {
+    #navbar {
         display: none;
     }
 
-    #hamburger {
+    /* EXPERIENCE */
+    #EXPERIENCE .flex-row {
+        flex-direction: column;
+        justify-content: start;
         display: block;
-    }
-
-    #navbar:hover #hamburger {
-        color: white;
-    }
-
-    #navbar:hover #hamburger:hover {
-        color: var(--hack-green);
-    }
-
-    #anti-hamburger {
-        display: none;
+    } 
+    
+    .work-container {
+        width: 100%;
     }
 
 
