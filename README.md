@@ -7,14 +7,14 @@ Hosted on Github Pages
 Contact form is connected to Google Form, due to lack of php support for static sites  
 
 ## TODO - prioritized
-- [ ] experience section  
-- [ ] education section  
 - [ ] skills section  
   - [ ] add skills to experience, projects, and education sections  
 - [ ] awards/highlights section  
 - [ ] animate "software developer" on splash  
 - [ ] single project highlight  
 - [ ] add timeline for work experience and leadership  
+- [X] experience section  
+- [X] education section  
 - [X] fix mobile representation  
   - [X] BUG: last project is cut off on mobile  
 - [X] project overviews  
