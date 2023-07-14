@@ -43,9 +43,14 @@
 
     text-align: center;
     padding: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     margin: 0.25rem;
 
-    border-radius: 10px;
+    border-radius: 100px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
     min-width: min-content;
 }
 
@@ -55,22 +60,29 @@
 }
 
 .secondary-button:hover {
-    background-color: var(--hack-green);
+    background-color: black;
     opacity: 1.0;
+
+    border-color: var(--hack-green);
+    border-width: 2px;
+    border-style: solid;
 }
 
 .secondary-button:hover a {
-    color: black;
+    color: white;
 }
 
 .tertiary-button {
-    background-color: var(--hack-green);
-
     text-align: center;
     padding: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
     margin: 0.25rem;
 
-    border-radius: 10px;
+    border-radius: 100px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
     min-width: min-content;
 }
 
@@ -81,6 +93,7 @@
 
 .tertiary-button:hover {
     background-color: black;
+    border-color: var(--hack-green);
 }
 
 .tertiary-button:hover a {

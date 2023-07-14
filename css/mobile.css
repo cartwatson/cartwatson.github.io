@@ -63,23 +63,7 @@
     /* add something to not play video on mobile */
 
     /* NAVAR */
-    #navbar-middle {
-        display: none;
-    }
-
-    #hamburger {
-        display: block;
-    }
-
-    #navbar:hover #hamburger {
-        color: white;
-    }
-
-    #navbar:hover #hamburger:hover {
-        color: var(--hack-green);
-    }
-
-    #anti-hamburger {
+    #navbar {
         display: none;
     }
 
