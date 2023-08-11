@@ -119,6 +119,14 @@ img {
     margin-bottom: 2.5%;
 }
 
+.inline-link {
+    color: black;
+}
+
+.inline-link:hover {
+    color: blue;
+}
+
 /* icons */
 .icon {
     display: inline-block;
