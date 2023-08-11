@@ -37,6 +37,7 @@ section[id="SPLASH"] {
     margin-left: auto;
     margin-right: auto;
     width: 85%;
+    max-width: 1500px; /* constrain to three columns */
 }
 
 .work-card {
