@@ -118,14 +118,11 @@
                 </div>
             </section>
 
-            <!-- TODO: IMPLEMENT: skills scroller deal - https://youtu.be/TgT2r0T1IeM?t=156 -->
-            <section id="SKILLS" style="background-color: var(--hack-green)">
-                <h1 style="text-align: center;">SKILLS & TECHNOLOGIES</h1>
-                <p style="text-align: center;">Section coming soon! Working on the design now! Implement scroller that scrolls through all my skills/technologies</p>
-            </section>
+            <!-- TODO: find something to add here to make spacing cool // might not be necessary tbh -->
+            <!-- <section style="background-color: var(--hack-green)"></section> -->
 
             <section id="PROJECTS">
-                <h1 class="title">PORTFOLIO</h1>
+                <h1 class="title">PROJECTS</h1>
                 <div class="project-container">
                     <!-- Dans Auto Barn -->
                     <div class="card">
@@ -227,43 +224,38 @@
                 </div>
             </section>
             
-            <!-- TODO: DESGIN: visual weight feels weird in this section -->
             <section id="CONTACT">
                 <h1 class="title" style="color: white;">Get In Touch!</h1>
                 <p style="color: white; text-align: center;">I'll get back to you as soon as possible!</p>
                 <div class="container flex-row ultrawide-container" style="justify-content: center;">
-                    <div>
-                        <form id="gform" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSde27gQxucEQXTG_4wamHr5QMeruryu2ulxZUJbU3qbqV5EBA/formResponse?" target="hidden_iframe" style="color: white;">
-                            <div class="flex-row" style="justify-content: space-between;">
-                                <div class="flex-col" style="width: 47.5%;">
-                                    <label for="entry.578492226">Name<span style="color: red;">*</span></label>
-                                    <input type="text" id="entry.578492226" name="entry.578492226" placeholder="First Last">
-                                </div>
-                                <div class="flex-col" style="width: 47.5%;">
-                                    <label for="entry.195477056">Email<span style="color: red;">*</span></label>
-                                    <input type="text" id="entry.195477056" name="entry.195477056" placeholder="name@email.com">
-                                </div>
+                    <form id="gform" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSde27gQxucEQXTG_4wamHr5QMeruryu2ulxZUJbU3qbqV5EBA/formResponse?" target="hidden_iframe" style="color: white;">
+                        <div class="flex-row" style="justify-content: space-between;">
+                            <div class="flex-col" style="width: 47.5%;">
+                                <label for="entry.578492226">Name<span style="color: red;">*</span></label>
+                                <input type="text" id="entry.578492226" name="entry.578492226" placeholder="First Last">
                             </div>
+                            <div class="flex-col" style="width: 47.5%;">
+                                <label for="entry.195477056">Email<span style="color: red;">*</span></label>
+                                <input type="text" id="entry.195477056" name="entry.195477056" placeholder="name@email.com">
+                            </div>
+                        </div>
 
-                            <label for="entry.649545670">Company</label>
-                            <input type="text" id="entry.649545670" name="entry.649545670" placeholder="XYZ inc.">
-                        
-                            <label for="entry.132988173">Message<span style="color: red;">*</span></label>
-                            <textarea id="entry.132988173" name="entry.132988173" placeholder="Your message" style="height:200px"></textarea>
-                        
-                            <div class="flex-row" style="justify-content: left;">
-                                <input type="submit" value="Submit">
-                                <p id="contactErrorMessage" style="color: red; margin-left: 1rem;"></p>
-                            </div>
-                        </form>
-                    </div>
-                    <div id="contact-img" class="flex-row" style="align-content: center;">
-                        <img src="media/paper-airplane.png" alt="Line drawing of a paper airplane" style="object-fit: contain; align-self: center;">
-                    </div>
+                        <label for="entry.649545670">Company</label>
+                        <input type="text" id="entry.649545670" name="entry.649545670" placeholder="XYZ inc.">
+                    
+                        <label for="entry.132988173">Message<span style="color: red;">*</span></label>
+                        <textarea id="entry.132988173" name="entry.132988173" placeholder="Your message" style="height:200px"></textarea>
+                    
+                        <div class="flex-row" style="justify-content: left;">
+                            <input type="submit" value="Submit">
+                            <p id="contactErrorMessage" style="color: red; margin-left: 1rem;"></p>
+                        </div>
+                    </form>
                 </div>
             </section> 
 
-            <!-- TODO: need a spacer here -->
+            <!-- TODO: need a **pretty** spacer here -->
+            <!-- <section></section> -->
 
             <!-- SECTION: HIGHLIGHTS -->
             <!--     SUBSECTIONS: Organizations, awards, -->
@@ -274,7 +266,7 @@
         </div>
 
         <footer>
-            <div class="flex-row ultrawide-container">
+            <div class="flex-row ultrawide-container" style="max-width: 1200px; justify-content: space-between;">
                 <h1 style="color: white;">CARTER WATSON</h1>
                 <div id="links" class="flex-col" style="justify-content: space-around; align-items: left;">
                     <h4 style="color: lightgray; margin-bottom: 0.25rem;">GET IN TOUCH</h4>
@@ -289,11 +281,11 @@
                     </div>
                 </div>
             </div>
-            <div class="flex-row bottom-flex ultrawide-container">
+            <div class="flex-row bottom-flex ultrawide-container" style="justify-content: left; max-width: 1200px;">
                 <p class="copyright" style="color: gray;">&copy; Carter Watson 2023</p>
-                <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                <!-- <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
                     <a href="https://github.com/cartwatson/cartwatson.github.io/tree/gh-pages" target="_blank" style="color: gray;">Source code</a>
-                </div>
+                </div> -->
             </div>
         </footer>
     </div>
