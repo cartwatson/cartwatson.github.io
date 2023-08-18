@@ -8,20 +8,22 @@ Contact form is connected to Google Form, due to lack of php support for github 
 
 ## TODO - prioritized
 - [ ] incorporate UI/UX feedback
-  - [ ] lines in experience section should be CS
-  - [ ] lines in projects section should be CS
+  - [ ] decor lines in experience section should be CS
+  - [ ] decor lines in projects section should be CS
   - [X] fix margin on first-child buttons
   - [ ] Review typography
-    - [ ] stick to a few text sizes
+    - [X] stick to a few text sizes
     - [ ] Review font choice, maybe switch font for name on splash
-  - [ ] review all text
+  - [X] review all text
     - [X] linkedin capitalization
-    - [ ] about me section grammar
+    - [X] about me section grammar
     - [X] capitalization of titles
-  - [ ] vertical spacing on about me header
+  - [X] vertical spacing on about me header
     - this is an issue with the splash background overflowing? I think
+    - nope, was a padding issue :/  
 - [ ] get photo for about me section
 - [ ] animate "software developer" on splash  
+- [ ] fancy animated down arrow on splash to indicate scroll
 - [ ] add timeline for work experience and leadership  
 - [ ] skills section  
   - [ ] add skills to experience, projects, and education sections  
