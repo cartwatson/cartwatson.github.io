@@ -47,20 +47,20 @@ Contact form is connected to Google Form, due to lack of php support for github 
 - [ ] Refactor using React... or blazor?  
 
 ## Credits
-* [Black Dot Gif - Shield AI](https://shield.ai/)
+- [Black Dot Gif - Shield AI](https://shield.ai/)
 
 ## References
-* [git branch timeline deal](https://codepen.io/guttentag/pen/rOxzwQ)
-* [Google Form as Contact - can't find link :/]()  
+- [git branch timeline deal](https://codepen.io/guttentag/pen/rOxzwQ)
+- [Google Form as Contact - can't find link :/]()  
 
 ## Design Inspirations
-* [Anduril](https://www.anduril.com)  
-* [Shield AI](https://www.shield.ai)  
-* [Raytheon](https://www.rtx.com)  
-* [L3HARRIS](https://www.l3harris.com)  
-* [Palantir](https://www.palantir.com)  
-* [Picogrid](https://www.picogrid.com)  
-* [Nuro](https://www.nuro.ai)  
-* [Accrete](https://www.accrete.ai)  
-* [Archangel Imaging](https://www.archangel.im)  
-* [Space Dynamics Laboratory](https://www.sdl.usu.edu)  
+- [Anduril](https://www.anduril.com)  
+- [Shield AI](https://www.shield.ai)  
+- [Raytheon](https://www.rtx.com)  
+- [L3HARRIS](https://www.l3harris.com)  
+- [Palantir](https://www.palantir.com)  
+- [Picogrid](https://www.picogrid.com)  
+- [Nuro](https://www.nuro.ai)  
+- [Accrete](https://www.accrete.ai)  
+- [Archangel Imaging](https://www.archangel.im)  
+- [Space Dynamics Laboratory](https://www.sdl.usu.edu)  
