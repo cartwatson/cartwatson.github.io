@@ -32,7 +32,7 @@
         </header>
 
         <div id="content">
-            <section id="SPLASH" style="background-color: transparent;">
+            <section id="SPLASH" style="background-color: transparent"><!--transparent;">-->
                 <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
                     <source src="media/blackDotGif.mp4" type="video/mp4">
                 </video>
@@ -55,18 +55,19 @@
                 </div>
             </section>
             
-            <section id="ABOUT">
-                <h1 class="title">About Me</h1>
+            <section id="ABOUT"><!--style="margin-top: 10vh; margin-bottom: 10vh;"-->
+                <h1 class="title">ABOUT ME</h1>
                 <div class="flex-row ultrawide-container" style="align-items: center;">
-                    <div>
+                    <div class="flex-col">
                         <!-- TODO: FIX: replace with real photo later -->
                         <img src="media/lakeLouise.png" alt="Lake Louise in Banff National Park" style="object-fit: fill;">
+                        <p style="color: rgb(127, 127, 127); margin-top: 0; margin-left: 0.1rem;">&copy; Photo by <a href="#" target="_blank" style="color: inherit;">Sarah Rassmussun</a></p>
                     </div>
                     <div id="about-me-text">
                         <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to Southern California in early 2024.  I'll graduate from Utah State University in December 2023 with my Bachelor's Degree in Computer Science.</p>
                         <p>I have two years of experience working as a software engineer in the defense industry.  In that time I've learned a lot, programming best practices, CI/CD pipelines, and the software development process.</p>
                         <p>Outside of work I enjoy cycling, video games, and traveling! I just completed my first century (100mi) ride.  I am a huge Nintendo fan and enjoy playing their games on my GameCube and Switch. My most recent trip was to Banff National Park, where my family and I visited Lake Louise and hiked to the Lake Agnes Tea House.</p>
-                        <p>If you'd like to connect more send me a message on LinkedIn or contact me through the form below!</p>
+                        <p>If you'd like to connect send me a message on LinkedIn or contact me through the form below!</p>
                         <div class="flex-row" style="justify-content: left; width: 100%;">
                             <div class="tertiary-button">
                                 <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LinkedIn</a>
@@ -84,7 +85,7 @@
             
             <section id="EXPERIENCE" style="background-color: rgb(237, 237, 237);">
                 <h1 class="title" style="text-align: center;">EXPERIENCE</h1>
-                <p style="text-align: center;">Check out my <a href="https://www.linkedin.com/in/cartwatson" target="_blank" style="text-decoration: none; color: #000;">linkedin</a> for more details!</p>
+                <p style="text-align: center;">Check out my <a href="https://www.linkedin.com/in/cartwatson" target="_blank" style="text-decoration: none; color: #000000;">LinkedIn</a> for more details!</p>
                 <div class="flex-col work-container ultrawide-container">
                     <div class="flex-row">
                         <div class="work-card flex-col">
@@ -161,7 +162,7 @@
                         <img src="media/projects/HackUSU-GPT-CYOA.jpg" alt="Screen shot of the Choose Your Own Adventure story over VS Code">
                         <div class="flex-col" style="justify-content: space-between;">
                             <div class="project-title-bar">
-                                <h1>GPT Powered Choose Your Own Adventure</h1>
+                                <h1>GPT Choose Your Own Adventure</h1>
                                 <div class="icon-container">
                                     <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
                                     <a title="Video Demo"  href="https://youtu.be/Z_0t5PnRWzw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
@@ -236,7 +237,7 @@
                             </div>
                             <div class="flex-col" style="width: 47.5%;">
                                 <label for="entry.195477056">Email<span style="color: red;">*</span></label>
-                                <input type="text" id="entry.195477056" name="entry.195477056" placeholder="name@email.com">
+                                <input type="text" id="entry.195477056" name="entry.195477056" placeholder="email@example.com">
                             </div>
                         </div>
 

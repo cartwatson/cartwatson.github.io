@@ -1,18 +1,32 @@
 # Portfolio
-available at [cartwatson.com](http://www.cartwatson.com)
+available at [cartwatson.com](https://cartwatson.com)
 
 ## Technology
 Created from scratch with vanilla html, css, and js  
 Hosted on Github Pages  
-Contact form is connected to Google Form, due to lack of php support for static sites  
+Contact form is connected to Google Form, due to lack of php support for github pages  
 
 ## TODO - prioritized
+- [ ] incorporate UI/UX feedback
+  - [ ] lines in experience section should be CS
+  - [ ] lines in projects section should be CS
+  - [X] fix margin on first-child buttons
+  - [ ] Review typography
+    - [ ] stick to a few text sizes
+    - [ ] Review font choice, maybe switch font for name on splash
+  - [ ] review all text
+    - [X] linkedin capitalization
+    - [ ] about me section grammar
+    - [X] capitalization of titles
+  - [ ] vertical spacing on about me header
+    - this is an issue with the splash background overflowing? I think
+- [ ] get photo for about me section
+- [ ] animate "software developer" on splash  
+- [ ] add timeline for work experience and leadership  
 - [ ] skills section  
   - [ ] add skills to experience, projects, and education sections  
 - [ ] awards/highlights section  
-- [ ] animate "software developer" on splash  
 - [ ] single project highlight  
-- [ ] add timeline for work experience and leadership  
 - [X] experience section  
 - [X] education section  
 - [X] fix mobile representation  
@@ -28,17 +42,16 @@ Contact form is connected to Google Form, due to lack of php support for static 
   - [X] clear form  
 
 ### Future Work
-- [ ] Refactor using React  
+- [ ] Refactor using React... or blazor?  
 
 ## Credits
 * [Black Dot Gif - Shield AI](https://shield.ai/)
 
 ## References
 * [git branch timeline deal](https://codepen.io/guttentag/pen/rOxzwQ)
-* [Google Form as Contact]()  
+* [Google Form as Contact - can't find link :/]()  
 
 ## Design Inspirations
-Ordered in most to least influential
 * [Anduril](https://www.anduril.com)  
 * [Shield AI](https://www.shield.ai)  
 * [Raytheon](https://www.rtx.com)  
