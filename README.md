@@ -21,7 +21,7 @@ Contact form is connected to Google Form, due to lack of php support for github 
   - [X] vertical spacing on about me header
     - this is an issue with the splash background overflowing? I think
     - nope, was a padding issue :/  
-- [ ] get photo for about me section
+- [X] get photo for about me section
 - [ ] animate "software developer" on splash  
 - [ ] fancy animated down arrow on splash to indicate scroll
 - [ ] add timeline for work experience and leadership  

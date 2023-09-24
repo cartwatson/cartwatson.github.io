@@ -25,9 +25,12 @@ section[id="SPLASH"] {
 }
 
 #about-me-text {
-    padding-left: 3rem;
-    padding-right: 12rem;
+    padding-left: 2rem;
     box-sizing: border-box;
+}
+
+#about-me-text p {
+    width: 85%;
 }
 
 /* EXPERIENCE */
