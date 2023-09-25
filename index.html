@@ -33,7 +33,7 @@
         </header>
 
         <div id="content">
-            <section id="SPLASH" style="background-color: transparent; padding-bottom: 0%;"><!--transparent;">-->
+            <section id="SPLASH" style="background-color: transparent; padding-bottom: 0%;">
                 <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
                     <source src="media/blackDotGif.mp4" type="video/mp4">
                 </video>
@@ -60,16 +60,15 @@
                 <h1 class="title">ABOUT ME</h1>
                 <div class="flex-row ultrawide-container" style="align-items: center;">
                     <div class="flex-col">
-                        <!-- TODO: FIX: replace with real photo later add in fix with caption/credit -->
-                        <img src="media/lakeLouise.png" alt="Lake Louise in Banff National Park" style="object-fit: fill;">
-                        <!--<p style="color: rgb(127, 127, 127); margin-top: 0; margin-left: 0.1rem;">&copy; Photo by <a href="#" target="_blank" style="color: inherit;">Sarah Rassmussun</a></p>-->
+                        <img src="media/about_me.jpg" alt="Photo of myself in front of Old Main at Utah State University" style="aspect-ratio: 0 / 0;">
+                        <span style="color: rgb(127, 127, 127); margin-top: 0.1rem; margin-left: 0.1rem; font-size: smaller;">&copy; Photo by <a href="https://www.sarahrasmussenproductions.com/" target="_blank" style="color: inherit;">Sarah Rassmussun</a></span>
                     </div>
                     <div id="about-me-text">
-                        <p>My name is Carter Watson.  I'm from northern Utah but plan to relocate to the LA metro area in early 2024. I'll graduate from Utah State University in December 2023 with my B.S. in Computer Science.</p>
+                        <p>Hi I'm Carter Watson!  I'm from northern Utah but plan to relocate to the LA metro area in early 2024. I'll graduate from Utah State University in December 2023 with my B.S. in Computer Science.</p>
                         <p>I have two years of experience working as a software engineer in the defense industry. In that time I've learned a lot: programming best practices and standards, CI/CD pipelines, system architechure, and so much more.</p>
-                        <p>Outside of work I enjoy cycling, concerts, and traveling. I just completed my first century (100mi) ride this summer. My favorite concert I've ever been to was Bleachers at the Ogden Amphitheater. My most recent trip was to Banff National Park, where my family and I visited Lake Louise and hiked to the Lake Agnes Tea House.</p>
+                        <p>Outside of work I enjoy cycling, concerts, and traveling. I just completed my first century (100mi) ride this summer. My favorite concert ever was Bleachers at the Ogden Amphitheater. My most recent trip was to Banff National Park, where my family and I visited Lake Louise and hiked to the Lake Agnes Tea House.</p>
                         <p>If you'd like to connect send me a message on LinkedIn or contact me through the form below!</p>
-                        <div class="flex-row" style="justify-content: left; width: 100%;">
+                        <div class="flex-row" style="justify-content: left; width: 100%; margin-bottom: 1.5rem;">
                             <div class="tertiary-button">
                                 <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LinkedIn</a>
                             </div>
@@ -93,19 +92,16 @@
                             <img src="media/experience/Space_Dynamics_Laboratory.jpg" alt="The Space Dynamics Laboratory in Logan Ut">
                             <h1><a href="https://www.sdl.usu.edu/" target="_blank">Space Dynamics Laboratory</a></h1>
                             <h3>Software Engineer</h3>
-                            <hr>
                         </div>
                         <div class="work-card flex-col">
                             <img src="media/experience/PetersensInc.jpg" alt="Petersen Inc in Ogden Ut">
                             <h1><a href="https://www.peterseninc.com/" target="_blank">Petersen Inc</a></h1>
                             <h3>Program Management Intern</h3>
-                            <hr>
                         </div>
                         <div class="work-card flex-col">
                             <img src="media/experience/mpwr.jpg" alt="solar panels on a roof">
                             <h1><a href="https://www.mpwr.solar/" target="_blank">MPWR</a></h1>
                             <h3>Sales Representative</h3>
-                            <hr>
                         </div>
                     </div>
     
@@ -113,8 +109,7 @@
                         <div class="work-card flex-col">
                             <img src="media/experience/usu.jpg" alt="The Space Dynamics Laboratory in Logan Ut" style="max-height: 400px; object-fit: cover;">
                             <h1><a href="https://www.usu.edu/cs/" target="_blank">Utah State University</a></h1>
-                            <h3>Bachelor's of Computer Science</h3>
-                            <hr>
+                            <h3>B.S. in Computer Science</h3>
                         </div>
                     </div>
                 </div>
@@ -129,7 +124,7 @@
                     <!-- Dans Auto Barn -->
                     <div class="card">
                         <img src="media/projects/dansautobarn.png" alt="Screenshot of dansautobarn.com">
-                        <div class="flex-col" style="justify-content: space-between;">
+                        <div>
                             <div class="project-title-bar">
                                 <h1>Dan's Auto Barn</h1>
                                 <div class="icon-container">
@@ -138,14 +133,13 @@
                                     <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                 </div>
                             </div>
-                            <hr>
                             <p>Lead an 4-person agile-scrum team as scrum master over four months to create a dynamic car rental site according to requirements given.  Built using Django, Bootstrap5, and Vue.js.</p>
                         </div>
                     </div>
                     <!-- VR Heart Sync -->
                     <div class="card">
                         <img src="media/projects/VRHeartSync.jpg" alt="Screenshot of VR app with picture in picture of user using the app">
-                        <div class="flex-col" style="justify-content: space-between;">
+                        <div>
                             <div class="project-title-bar">
                                 <h1>VR Heart Sync</h1>
                                 <div class="icon-container">
@@ -154,14 +148,13 @@
                                     <a title="Source Code" href="https://github.com/cartwatson/course-work/tree/main/5890-intro-to-interactive-VR/final_project" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                 </div>
                             </div>
-                            <hr>
                             <p>A VR project that leverages a peripheral device to change the experience based on user heart rate info.  Pioneered the FOCUS technique to allow easier/harder selection based on user fatigue levels. Built with Unity and C# for the Meta Quest 2.</p>
                         </div>
                     </div>
                     <!-- GPT CYOA -->
                     <div class="card">
                         <img src="media/projects/HackUSU-GPT-CYOA.jpg" alt="Screen shot of the Choose Your Own Adventure story over VS Code">
-                        <div class="flex-col" style="justify-content: space-between;">
+                        <div>
                             <div class="project-title-bar">
                                 <h1>GPT CYOA</h1>
                                 <div class="icon-container">
@@ -170,14 +163,13 @@
                                     <a title="Source Code" href="https://github.com/Utah-State-University-Cybersecurity/HackUSU-CYOA" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                 </div>
                             </div>
-                            <hr>
                             <p>A hackathon project for HackUSU 2023.  Won the Beginner Award in Artificial Intelligence and Machine Learning.  Used OpenAI API to query ChatGPT 3.5Turbo to create unique characters and stories.</p>
                         </div>
                     </div>
                     <!-- Android Dev -->
                     <div class="card">
                         <img src="media/projects/androidDev.jpg" alt="image of android studio with a pixel 4 running my Android Kanban App">
-                        <div class="flex-col" style="justify-content: space-between;">
+                        <div>
                             <div class="project-title-bar">
                                 <h1>Kanban App</h1>
                                 <div class="icon-container">
@@ -186,14 +178,13 @@
                                     <a title="Source Code" href="https://github.com/cartwatson/2410-AndroidDev/tree/main/finalProject" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                 </div>
                             </div>
-                            <hr>
                             <p>An android app that handles tickets on a Kanban board.  Final project for CS2410 at USU.  Main takeaway was the implementation of the MVVM. Built in Android Studio using Kotlin.</p>
                         </div>
                     </div>
                     <!-- Xenon -->
                     <div class="card">
                         <img src="media/projects/zenon.jpg" alt="battle bots in a cage match">
-                        <div class="flex-col" style="justify-content: space-between;">
+                        <div>
                             <div class="project-title-bar">
                                 <h1>Project Xenon</h1>
                                 <div class="icon-container">
@@ -202,14 +193,13 @@
                                     <!-- <a title="Source Code" href="" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a> -->
                                 </div>
                             </div>
-                            <hr>
                             <p>Designed and created a robot to participate in the Rocky Mountain chapter of the National Robotics League.  Won the Innovation award for our documentation and brainstorming process.</p>
                         </div>
                     </div>
                     <!-- Stop Light Project -->
                     <div class="card">
                         <img src="media/projects/stoplight.jpg" alt="Image of garage with stoplight project wired up.">
-                        <div class="flex-col" style="justify-content: space-between;">
+                        <div>
                             <div class="project-title-bar">
                                 <h1>Stop Light Radar</h1>
                                 <div class="icon-container">
@@ -218,7 +208,6 @@
                                     <a title="Source Code" href="https://github.com/cartwatson/arduino/tree/main/stop_light_project" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
                                 </div>
                             </div>
-                            <hr>
                             <p>Built at age 16 using Arduino.  Used an ultrasonic sensor to measure the remaining distance until the car is pulled into the garage.  Arduino and relay board change the stoplight based on ultrasonic sensor.</p>
                         </div>
                     </div>
@@ -257,14 +246,7 @@
             </section> 
 
             <!-- TODO: need a **pretty** spacer here -->
-            <!-- <section></section> -->
-
-            <!-- SECTION: HIGHLIGHTS -->
-            <!--     SUBSECTIONS: Organizations, awards, -->
-            <!--<section id="AWARDS">
-                <h1 class="title">Career Highlights</h1>
-                <p style="text-align: center;">Section coming soon! Working on the design now!</p>
-            </section>-->
+            <!-- section ideas: Organizations, awards, etc, other stuff from linkedin -->
         </div>
 
         <footer>
