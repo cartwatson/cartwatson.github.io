@@ -8,8 +8,8 @@ Contact form is connected to Google Form, due to lack of php support for github 
 
 ## TODO - prioritized
 - [ ] incorporate UI/UX feedback
-  - [ ] decor lines in experience section should be CS
-  - [ ] decor lines in projects section should be CS
+  - [X] decor lines in experience section should be CS
+  - [X] decor lines in projects section should be CS
   - [X] fix margin on first-child buttons
   - [ ] Review typography
     - [X] stick to a few text sizes
