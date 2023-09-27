@@ -83,7 +83,7 @@ section[id="SPLASH"] {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1350px; /* constrain to three columns - take col-gap into account to line up with experience */
+    max-width: 1485px; /* constrain to three columns - take col-gap into account to line up with experience */
 }
 
 .card {
