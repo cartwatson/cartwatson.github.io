@@ -1,80 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Carter Watson</title>
+    <title>Carter Watson - SWE Portfolio</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- meta tags for link previews -->
+    <meta name="title" property="og:title" content="Carter Watson - Software Engineering Portfolio">
+    <meta property="og:type" content="Software Engineering Portfolio"/>
+    <meta name="image" property="og:image" content="media/about_me.jpg">
+    <meta name="description" property="og:description" content="Hi I'm Carter Watson!  I'm from northern Utah but plan to relocate to the LA metro area in early 2024. I'll graduate from Utah State University in December 2023 with my B.S. in Computer Science.">
+    <meta name="author" content="Carter Watson">
+    <!-- end SEO meta/link preview tags -->
+    <link rel="stylesheet" href="css/general.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/header-footer.css"/>
+    <link rel="stylesheet" href="css/sections.css"/>
+    <link rel="stylesheet" href="css/mobile.css"/>
     <script src="https://kit.fontawesome.com/aae2ea0d22.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
   </head>
   <body>
     <div id="page">
-        <header id="navbar" class="navbar">
-            <div class="flex-row" style="justify-content: space-between;">
-                <div class="button active">
-                    CARTER WATSON
+        <header id="navbar">
+            <div class="flex-row ultrawide-container" style="justify-content: space-between; align-items: center; height: 3rem;">
+                <div class="button edge-button">
+                    <a href="/">CARTER WATSON</a>
                 </div>
-                <!-- Right justified -->
-                <div class="flex-row" style="justify-content: space-around;">
-                    <div class="button">
-                        EXPERIENCE
-                    </div>
-                    <div class="button">
-                        EDUCATION
-                    </div>
-                    <div class="button">
-                        ORGANIZATIONS
-                    </div>
-                    <div class="button">
-                        AWARDS
-                    </div>
-                    <!--<div class="button">
-                        BLOG
-                    </div>
-                    <div class="button">
-                        Skills
-                    </div>-->
-                    <!-- Hamburger for mobile -->
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
+                <div id="navbar-middle" class="flex-row" style="justify-content: space-around; width: 50%;">
+                    <div class="button"><a href="#ABOUT">ABOUT</a></div>
+                    <div class="button"><a href="#EXPERIENCE">EXPERIENCE</a></div>
+                    <div class="button"><a href="#PROJECTS">PORTFOLIO</a></div>
+                    <div class="button"><a href="#CONTACT">CONTACT</a></div>
+                </div>
+                <div class="button edge-button">
+                    <a href="/links.html">LINKS</a>
                 </div>
             </div>
         </header>
 
         <div id="content">
-            <h1>Currently Under Construction</h1>
-            <p>Visit my socials below for more information, I'm most responsive on linkedin</p>
-            <p>Resume and email coming soon... (if you have any tips on using a custom domain email please reach out to me)</p>
-            <div>
-                <a style="margin-right: 0.25rem; color: black;" href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="icon fab fa-linkedin"></i></a>
-                <a style="margin-right: 0.25rem; color: black;" href="https://github.com/cartwatson" target="_blank"><i class="icon fab fa-github"></i></a>
-                <!--<a style="margin-right: 0.25rem; color: black;" href="mailto:your.email@example.com"><i class="icon fas fa-envelope"></i></a>
-                <a style="margin-right: 0.25rem; color: black;" href="#" target="_blank"><i class="icon fas fa-file"></i></a>-->
-            </div>
-        </div>
-
-        <!--
-        <div id="sidebar">
-            <a href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/cartwatson" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i></a>
-            <a href="#" target="_blank"><i class="fas fa-file"></i></a> !-- TODO: update with link to resume --
-        </div>
-        -->
-
-        <footer id="footer">
-            <div class="flex-row" style="margin-top: 1rem; margin-left: auto; margin-right: auto; justify-content: space-around;">
-                <p style="color: white">&copy; Carter Watson 2023</p>
-                <div id="footerbar" class="flex-row" style="justify-content: space-around; align-items: center;">
-                    <a href="https://www.linkedin.com/in/cartwatson" target="_blank"><i class="icon fab fa-linkedin"></i></a>
-                    <a href="https://github.com/cartwatson" target="_blank"><i class="icon fab fa-github"></i></a>
-                    <a href="mailto:your.email@example.com"><i class="icon fas fa-envelope"></i></a>
-                    <a href="#" target="_blank"><i class="icon fas fa-file"></i></a>
+            <section id="SPLASH" style="background-color: transparent; padding-bottom: 0%;">
+                <video autoplay loop muted playsinline id="blackDotGif" poster="media/blackDotGifPoster.jpg">
+                    <source src="media/blackDotGif.mp4" type="video/mp4">
+                </video>
+                
+                <!-- SECTION: SPLASH PAGE -->
+                <div class="overlay ultrawide-container">
+                    <div class="container">
+                        <h4 style="font-size: 1.5rem; margin: 0%;">Hi I'm</h4>
+                        <h1 style="font-size: 6.5rem; margin: 0%;">Carter Watson</h1>
+                        <h3 id="title" style="font-size: 2.5rem; margin: 0%;">a software engineer</h3>
+                        <div class="flex-row" style="margin-top: 1rem;">
+                            <div class="secondary-button">
+                                <a href="#PROJECTS">View My Projects</a>
+                            </div>
+                            <div class="secondary-button">
+                                <a href="#CONTACT">Get in Touch</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+            
+            <section id="ABOUT">
+                <h1 class="title">ABOUT ME</h1>
+                <div class="flex-row ultrawide-container" style="align-items: center;">
+                    <div class="flex-col">
+                        <img src="media/about_me.jpg" alt="Photo of myself in front of Old Main at Utah State University" style="aspect-ratio: 0 / 0;">
+                        <span style="color: rgb(127, 127, 127); margin-top: 0.1rem; margin-left: 0.1rem; font-size: smaller;">&copy; Photo by <a href="https://www.sarahrasmussenproductions.com/" target="_blank" style="color: inherit;">Sarah Rassmussun</a></span>
+                    </div>
+                    <div id="about-me-text">
+                        <p>Hi I'm Carter Watson!  I'm from northern Utah but plan to relocate to the LA metro area in early 2024. I'll graduate from Utah State University in December 2023 with my B.S. in Computer Science.</p>
+                        <p>I have two years of experience working as a software engineer in the defense industry. In that time I've learned a lot: programming best practices and standards, CI/CD pipelines, system architechure, and so much more.</p>
+                        <p>Outside of work I enjoy cycling, concerts, and traveling. I just completed my first century (100mi) ride this summer. My favorite concert ever was Bleachers at the Ogden Amphitheater. My most recent trip was to Banff National Park, where my family and I visited Lake Louise and hiked to the Lake Agnes Tea House.</p>
+                        <p>If you'd like to connect send me a message on LinkedIn or contact me through the form below!</p>
+                        <div class="flex-row" style="justify-content: left; width: 100%; margin-bottom: 1.5rem;">
+                            <div class="tertiary-button">
+                                <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LinkedIn</a>
+                            </div>
+                            <div class="tertiary-button">
+                                <a href="media/PublicResume-CarterWatson.pdf" target="_blank">My Resume</a>
+                            </div>
+                            <div class="tertiary-button">
+                                <a href="#CONTACT">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="EXPERIENCE" style="background-color: rgb(237, 237, 237);">
+                <h1 class="title" style="text-align: center;">EXPERIENCE</h1>
+                <p style="text-align: center;">Check out my <a href="https://www.linkedin.com/in/cartwatson" target="_blank" style="text-decoration: underline; color: #000000;">LinkedIn</a> for more details!</p>
+                <div class="flex-col work-container ultrawide-container">
+                    <div class="flex-row">
+                        <div class="work-card flex-col">
+                            <img src="media/experience/Space_Dynamics_Laboratory.jpg" alt="The Space Dynamics Laboratory in Logan Ut">
+                            <h1><a href="https://www.sdl.usu.edu/" target="_blank">Space Dynamics Laboratory</a></h1>
+                            <h3>Software Engineer</h3>
+                        </div>
+                        <div class="work-card flex-col">
+                            <img src="media/experience/PetersensInc.jpg" alt="Petersen Inc in Ogden Ut">
+                            <h1><a href="https://www.peterseninc.com/" target="_blank">Petersen Inc</a></h1>
+                            <h3>Program Management Intern</h3>
+                        </div>
+                        <div class="work-card flex-col">
+                            <img src="media/experience/mpwr.jpg" alt="solar panels on a roof">
+                            <h1><a href="https://www.mpwr.solar/" target="_blank">MPWR</a></h1>
+                            <h3>Sales Representative</h3>
+                        </div>
+                    </div>
+    
+                    <div id="EDUCATION">
+                        <div class="work-card flex-col">
+                            <img src="media/experience/usu.jpg" alt="The Space Dynamics Laboratory in Logan Ut" style="max-height: 400px; object-fit: cover;">
+                            <h1><a href="https://www.usu.edu/cs/" target="_blank">Utah State University</a></h1>
+                            <h3>B.S. in Computer Science</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TODO: find something to add here to make spacing cool // might not be necessary tbh -->
+            <!-- <section style="background-color: var(--hack-green)"></section> -->
+
+            <section id="PROJECTS">
+                <h1 class="title">PROJECTS</h1>
+                <div class="project-container">
+                    <!-- Dans Auto Barn -->
+                    <div class="card">
+                        <img src="media/projects/dansautobarn.png" alt="Screenshot of dansautobarn.com">
+                        <div>
+                            <div class="project-title-bar">
+                                <h1>Dan's Auto Barn</h1>
+                                <div class="icon-container">
+                                    <a title="Live Site"   href="http://dansautobarn.com" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <a title="Video Demo"  href="https://www.youtube.com/playlist?list=PLY7a540W2V3Uface3frI61mU53oRxRQO-" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                    <a title="Source Code" href="https://github.com/CS3450-Group9/Dans-AutoBarn" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                </div>
+                            </div>
+                            <p>Lead an 4-person agile-scrum team as scrum master over four months to create a dynamic car rental site according to requirements given.  Built using Django, Bootstrap5, and Vue.js.</p>
+                        </div>
+                    </div>
+                    <!-- VR Heart Sync -->
+                    <div class="card">
+                        <img src="media/projects/VRHeartSync.jpg" alt="Screenshot of VR app with picture in picture of user using the app">
+                        <div>
+                            <div class="project-title-bar">
+                                <h1>VR Heart Sync</h1>
+                                <div class="icon-container">
+                                    <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                    <a title="Video Demo"  href="https://www.youtube.com/watch?v=bHUiBgJ7CCI" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                    <a title="Source Code" href="https://github.com/cartwatson/course-work/tree/main/5890-intro-to-interactive-VR/final_project" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                </div>
+                            </div>
+                            <p>A VR project that leverages a peripheral device to change the experience based on user heart rate info.  Pioneered the FOCUS technique to allow easier/harder selection based on user fatigue levels. Built with Unity and C# for the Meta Quest 2.</p>
+                        </div>
+                    </div>
+                    <!-- GPT CYOA -->
+                    <div class="card">
+                        <img src="media/projects/HackUSU-GPT-CYOA.jpg" alt="Screen shot of the Choose Your Own Adventure story over VS Code">
+                        <div>
+                            <div class="project-title-bar">
+                                <h1>GPT CYOA</h1>
+                                <div class="icon-container">
+                                    <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                    <a title="Video Demo"  href="https://youtu.be/Z_0t5PnRWzw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                    <a title="Source Code" href="https://github.com/Utah-State-University-Cybersecurity/HackUSU-CYOA" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                </div>
+                            </div>
+                            <p>A hackathon project for HackUSU 2023.  Won the Beginner Award in Artificial Intelligence and Machine Learning.  Used OpenAI API to query ChatGPT 3.5Turbo to create unique characters and stories.</p>
+                        </div>
+                    </div>
+                    <!-- Android Dev -->
+                    <div class="card">
+                        <img src="media/projects/androidDev.jpg" alt="image of android studio with a pixel 4 running my Android Kanban App">
+                        <div>
+                            <div class="project-title-bar">
+                                <h1>Kanban App</h1>
+                                <div class="icon-container">
+                                    <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                    <a title="Video Demo"  href="https://youtu.be/A2NT0qXghZw" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                    <a title="Source Code" href="https://github.com/cartwatson/2410-AndroidDev/tree/main/finalProject" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                </div>
+                            </div>
+                            <p>An android app that handles tickets on a Kanban board.  Final project for CS2410 at USU.  Main takeaway was the implementation of the MVVM. Built in Android Studio using Kotlin.</p>
+                        </div>
+                    </div>
+                    <!-- Xenon -->
+                    <div class="card">
+                        <img src="media/projects/zenon.jpg" alt="battle bots in a cage match">
+                        <div>
+                            <div class="project-title-bar">
+                                <h1>Project Xenon</h1>
+                                <div class="icon-container">
+                                    <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                    <a title="Video Demo"  href="https://youtu.be/ynIMtACj47g" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                    <!-- <a title="Source Code" href="" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a> -->
+                                </div>
+                            </div>
+                            <p>Designed and created a robot to participate in the Rocky Mountain chapter of the National Robotics League.  Won the Innovation award for our documentation and brainstorming process.</p>
+                        </div>
+                    </div>
+                    <!-- Stop Light Project -->
+                    <div class="card">
+                        <img src="media/projects/stoplight.jpg" alt="Image of garage with stoplight project wired up.">
+                        <div>
+                            <div class="project-title-bar">
+                                <h1>Stop Light Radar</h1>
+                                <div class="icon-container">
+                                    <!-- <a title="Live Site"   href="" target="_blank"><i class="icon fa-solid fa-arrow-up-right-from-square"></i></a> -->
+                                    <a title="Video Demo"  href="https://youtu.be/54S8M4AuCrI" target="_blank"><i class="icon fa-solid fa-video"></i></a>
+                                    <a title="Source Code" href="https://github.com/cartwatson/arduino/tree/main/stop_light_project" target="_blank"><i class="icon fa-solid fa-code-branch"></i></a>
+                                </div>
+                            </div>
+                            <p>Built at age 16 using Arduino.  Used an ultrasonic sensor to measure the remaining distance until the car is pulled into the garage.  Arduino and relay board change the stoplight based on ultrasonic sensor.</p>
+                        </div>
+                    </div>
+                    <!-- End of cards -->
+                </div>
+            </section>
+            
+            <section id="CONTACT">
+                <h1 class="title" style="color: white;">Get In Touch!</h1>
+                <p style="color: white; text-align: center;">I'll get back to you as soon as possible</p>
+                <div class="container flex-row ultrawide-container" style="justify-content: center;">
+                    <form id="gform" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSde27gQxucEQXTG_4wamHr5QMeruryu2ulxZUJbU3qbqV5EBA/formResponse?" target="hidden_iframe" style="color: white;">
+                        <div class="flex-row" style="justify-content: space-between;">
+                            <div class="flex-col" style="width: 47.5%;">
+                                <label for="entry.578492226">Name<span style="color: red;">*</span></label>
+                                <input type="text" id="entry.578492226" name="entry.578492226" placeholder="First Last">
+                            </div>
+                            <div class="flex-col" style="width: 47.5%;">
+                                <label for="entry.195477056">Email<span style="color: red;">*</span></label>
+                                <input type="text" id="entry.195477056" name="entry.195477056" placeholder="email@example.com">
+                            </div>
+                        </div>
+
+                        <label for="entry.649545670">Company</label>
+                        <input type="text" id="entry.649545670" name="entry.649545670" placeholder="XYZ inc.">
+                    
+                        <label for="entry.132988173">Message<span style="color: red;">*</span></label>
+                        <textarea id="entry.132988173" name="entry.132988173" placeholder="Your message" style="height:200px"></textarea>
+                    
+                        <div class="flex-row" style="justify-content: left;">
+                            <input type="submit" value="Submit">
+                            <p id="contactErrorMessage" style="color: red; margin-left: 1rem;"></p>
+                        </div>
+                    </form>
+                </div>
+            </section> 
+
+            <!-- TODO: need a **pretty** spacer here -->
+            <!-- section ideas: Organizations, awards, etc, other stuff from linkedin -->
+        </div>
+
+        <footer>
+            <div class="flex-row ultrawide-container" style="max-width: 1200px; justify-content: space-between;">
+                <h1 style="color: white;">CARTER WATSON</h1>
+                <div id="links" class="flex-col" style="justify-content: space-around; align-items: left;">
+                    <h4 style="color: lightgray; margin-bottom: 0.25rem;">GET IN TOUCH</h4>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="https://www.linkedin.com/in/cartwatson" target="_blank">LINKEDIN</a>
+                    </div>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="https://www.github.com/cartwatson" target="_blank">GITHUB</a>
+                    </div>
+                    <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                        <a href="media/PublicResume-CarterWatson.pdf" target="_blank">RESUME</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-row bottom-flex ultrawide-container" style="justify-content: left; max-width: 1200px;">
+                <p class="copyright" style="color: gray;">&copy; Carter Watson 2023</p>
+                <!-- <div class="button" style="padding: 0%; padding-bottom: 0.25rem;">
+                    <a href="https://github.com/cartwatson/cartwatson.github.io/tree/gh-pages" target="_blank" style="color: gray;">Source code</a>
+                </div> -->
             </div>
         </footer>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/send_email.js"></script>
   </body>
 </html>

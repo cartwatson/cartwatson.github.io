@@ -1,0 +1,135 @@
+:root {
+    --hack-green: #20C20E ;
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Consolas';
+}
+
+.title {
+    text-align: center;
+    width: 100%;
+    font-size: 2rem;
+    /* margin-bottom: 0.5em; */
+}
+
+/* NOTE: HACK: resuse navbar code in footer on a diff background */
+#links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+section {
+    background-color: white;
+    /* padding-top: 2.5%; */
+    padding-bottom: 1%;
+}
+
+.container {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#page {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* section styling */
+section[id="CONTACT"] {
+    background-color: black;
+}
+
+/* contact form */
+label {
+    color: white;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    border-bottom: 2px solid var(--hack-green);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=submit] {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: var(--hack-green);
+}
+
+hr {
+    display: inline-block;
+    width: 100%;
+}
+
+img {
+    object-fit: fill;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+
+.inline-link {
+    color: black;
+}
+
+.inline-link:hover {
+    color: blue;
+}
+
+/* icons */
+.icon {
+    display: inline-block;
+    font-size: 1.5em;
+    color: black;
+}
+
+.icon:hover {
+    color: var(--hack-green);
+}
