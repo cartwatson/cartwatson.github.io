@@ -4,10 +4,10 @@
 
 - [ ] create workflow
   - [ ] create script to accomplish workflow
+    - [ ] create blog template
+      - [ ] create template article
+      - [ ] create dummy article
 - [ ] create blog index page
-- [ ] create blog template
-  - [ ] create template article
-  - [ ] create dummy article
 - [ ] add section to home page to feature blog posts
 
 ## Design
