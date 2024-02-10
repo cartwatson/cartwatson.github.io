@@ -3,7 +3,7 @@ name: Generate blog posts
 on:
   push:
     branches:
-      - main
+      - blog
 
 jobs:
   generate_readme:
