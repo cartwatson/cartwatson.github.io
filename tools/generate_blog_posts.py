@@ -20,7 +20,7 @@ def write_html_meta_data(
     file_html: io.TextIOWrapper, template: io.TextIOWrapper, meta_data: dict
 ) -> None:
     """copy metadata from md to file_html using template"""
-    # parse template
+    # fill in starting static lines
     for _ in range(3):
         file_html.write(template.readline())
 
@@ -63,7 +63,7 @@ def write_html_file_contents(
 
 def create_html_file(
     filename_md: str, meta_data: dict, BLOG_DIR: str = "blog/articles/"
-):
+) -> None:
     """create html file from template and write contents from md file"""
     # create/open files
     filename_html = filename_md.removesuffix(".md") + ".html"
@@ -81,8 +81,8 @@ def create_html_file(
     template.close()
 
 
-def main():
-    BLOG_DIR = "blog/articles/"
+def main() -> None:
+    BLOG_DIR: str = "blog/articles/"
 
     articles: list[str] = []
     # get all posts
