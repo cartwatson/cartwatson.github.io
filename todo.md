@@ -5,8 +5,8 @@
 - [ ] create workflow
   - [ ] create script to accomplish workflow
     - [ ] create blog template
-      - [ ] create template article
-      - [ ] create dummy article
+      - [X] create template article
+      - [X] create dummy article
 - [ ] create blog index page
 - [ ] add section to home page to feature blog posts
 
