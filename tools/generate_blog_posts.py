@@ -93,6 +93,7 @@ def main() -> None:
 
     # process file
     for filename_md in articles:
+        print(os.path.join(BLOG_DIR, filename_md))  # DEBUG
         # parse meta data
         file_md = open(os.path.join(BLOG_DIR, filename_md), "r")
         meta_data: dict[str:any] = get_md_meta_data(file_md)
@@ -102,7 +103,6 @@ def main() -> None:
         if meta_data["publish"] == "false":
             continue
 
-        print(os.path.join(BLOG_DIR, filename_md))  # DEBUG
 
         # create article
         create_html_file(filename_md, meta_data, BLOG_DIR)
