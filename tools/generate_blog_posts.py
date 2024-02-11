@@ -2,7 +2,7 @@ import os
 import io
 
 
-def get_md_meta_data(file: io.TextIOWrapper) -> dict[str:any]:
+def get_md_meta_data(file: io.TextIOWrapper, filename: str="") -> dict[str:any]:
     """Gathers metadata from a md file (TextIOWrapper); removes both '---' from the stream"""
     meta_data = {}
     file.readline()  # remove ---
@@ -11,7 +11,11 @@ def get_md_meta_data(file: io.TextIOWrapper) -> dict[str:any]:
             break
 
         key_value = line.split(": ")
-        meta_data[key_value[0]] = key_value[1].removesuffix("\n")
+        try:
+            meta_data[key_value[0]] = key_value[1].removesuffix("\n")
+        except:
+            print(f"Error getting metadata in file: {filename}")
+            exit(1)
 
     return meta_data
 
@@ -96,7 +100,7 @@ def main() -> None:
         print(os.path.join(BLOG_DIR, filename_md))  # DEBUG
         # parse meta data
         file_md = open(os.path.join(BLOG_DIR, filename_md), "r")
-        meta_data: dict[str:any] = get_md_meta_data(file_md)
+        meta_data: dict[str:any] = get_md_meta_data(file_md, filename_md)
         file_md.close()
 
         # skip file if not ready to publish

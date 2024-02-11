@@ -2,7 +2,8 @@
 title: test article
 description: This is an article
 author: Carter Watson
-
+image: media/about_me.jpg
+publish: true
 ---
 
 # Title title
