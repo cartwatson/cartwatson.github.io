@@ -102,6 +102,8 @@ def main() -> None:
         if meta_data["publish"] == "false":
             continue
 
+        print(os.path.join(BLOG_DIR, filename_md))  # DEBUG
+
         # create article
         create_html_file(filename_md, meta_data, BLOG_DIR)
 
