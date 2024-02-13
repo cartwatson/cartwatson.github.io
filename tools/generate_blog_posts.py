@@ -2,7 +2,7 @@ import os
 import io
 
 
-def get_md_meta_data(file: io.TextIOWrapper, filename: str="") -> dict[str:any]:
+def get_md_meta_data(file: io.TextIOWrapper, filename: str = "") -> dict[str:any]:
     """Gathers metadata from a md file (TextIOWrapper); removes both '---' from the stream"""
     meta_data = {}
     file.readline()  # remove ---
@@ -97,7 +97,6 @@ def main() -> None:
 
     # process file
     for filename_md in articles:
-        print(os.path.join(BLOG_DIR, filename_md))  # DEBUG
         # parse meta data
         file_md = open(os.path.join(BLOG_DIR, filename_md), "r")
         meta_data: dict[str:any] = get_md_meta_data(file_md, filename_md)
@@ -106,7 +105,6 @@ def main() -> None:
         # skip file if not ready to publish
         if meta_data["publish"] == "false":
             continue
-
 
         # create article
         create_html_file(filename_md, meta_data, BLOG_DIR)
