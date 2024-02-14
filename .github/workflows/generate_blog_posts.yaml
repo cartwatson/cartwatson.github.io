@@ -34,6 +34,7 @@ jobs:
       run: |
         git config user.name "GitHub Action"
         git config user.email "action@github.com"
+        git pull origin gh-pages
         git add blog/articles/*.html
         git commit -m "AUTO: create blog posts" || exit 0  # Exit gracefully if no changes to commit
         git push origin blog:gh-pages
