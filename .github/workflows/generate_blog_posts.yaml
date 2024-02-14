@@ -27,8 +27,8 @@ jobs:
       run: python tools/blog/generate_blog_posts.py
 
     - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          commit-message: "AUTO: Create blog posts from template"
-          add-paths: blog/articles/*.html
-          branch: gh-pages
+      uses: peter-evans/create-pull-request@v6
+      with:
+        commit-message: "AUTO: Create blog posts from template"
+        add-paths: blog/articles/*.html
+        branch: gh-pages
