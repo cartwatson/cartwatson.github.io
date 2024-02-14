@@ -12,7 +12,8 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-        ref: "gh-pages"
+      with:
+        ref: gh-pages
 
     - name: Set up Python
       uses: actions/setup-python@v5
