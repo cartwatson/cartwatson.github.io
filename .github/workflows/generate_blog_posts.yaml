@@ -33,5 +33,6 @@ jobs:
         commit-message: "AUTO: Create blog posts from template"
         add-paths: blog/articles/*.html
         branch: gh-pages
+        base: blog
         assignees: cartwatson
         reviewers: cartwatson
