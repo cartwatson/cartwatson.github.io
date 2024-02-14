@@ -83,7 +83,7 @@ def create_html_file(filename_raw: str, meta_data: dict, ARTICLES_DIR: str) -> N
 
 
 def main() -> None:
-    ARTICLES_DIR: str = "blog/articles/"
+    ARTICLES_DIR: str = "tools/blog/articles/"
     ARTICLES_DEST: str = "blog/articles/"
 
     articles: list[str] = []
