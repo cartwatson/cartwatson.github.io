@@ -4,6 +4,7 @@ description: This is an article
 author: Carter Watson
 image: media/about_me.jpg
 publish: true
+date_published: 01/02/03
 ---
 
 # Title title
