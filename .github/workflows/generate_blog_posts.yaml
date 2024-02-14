@@ -2,8 +2,8 @@ name: Generate blog posts
 
 on:
   push:
-    branches:
-      - blog
+    paths:
+    - 'tools/blog/articles/**'
 
 jobs:
   generate_readme:
@@ -12,8 +12,7 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-      with:
-        ref: blog
+        ref: gh-pages
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -34,7 +33,5 @@ jobs:
         title: "[AUTO] Merge generated blog posts"
         commit-message: "AUTO: Create blog posts from template"
         add-paths: blog/*.html
-        branch: gh-pages
-        base: blog
+        branch: create-blog-posts
         assignees: cartwatson
-        reviewers: cartwatson
