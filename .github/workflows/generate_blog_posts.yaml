@@ -29,6 +29,9 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v6
       with:
+        title: "[AUTO] Merge generated blog posts"
         commit-message: "AUTO: Create blog posts from template"
         add-paths: blog/articles/*.html
         branch: gh-pages
+        assignees: cartwatson
+        reviewers: cartwatson

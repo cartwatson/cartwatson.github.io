@@ -86,7 +86,7 @@ def create_html_file(
 
 def main() -> None:
     ARTICLES_DIR: str = "tools/blog/articles/"
-    ARTICLES_DEST: str = "blog/articles/"
+    ARTICLES_DEST: str = "blog/"
 
     articles: list[str] = []
     # get all posts
