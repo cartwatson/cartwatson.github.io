@@ -65,15 +65,12 @@ def write_html_file_contents(
     return
 
 
-def create_html_file(
-    filename_md: str, meta_data: dict, BLOG_DIR: str = "blog/articles/"
-) -> None:
+def create_html_file(filename_raw: str, meta_data: dict, ARTICLES_DIR: str) -> None:
     """create html file from template and write contents from md file"""
     # create/open files
-    filename_html = filename_md.removesuffix(".md") + ".html"
-    file_html = open(os.path.join(BLOG_DIR, filename_html), "w")
-    file_md = open(os.path.join(BLOG_DIR, filename_md), "r")
-    template = open(os.path.join(BLOG_DIR, "template.html"), "r")
+    file_html = open(os.path.join(ARTICLES_DIR, filename_raw + ".html"), "w")
+    file_md = open(os.path.join(ARTICLES_DIR, filename_raw + ".md"), "r")
+    template = open(os.path.join(ARTICLES_DIR, "template.html"), "r")
 
     # write contents
     write_html_meta_data(file_html, template, meta_data)
@@ -86,11 +83,12 @@ def create_html_file(
 
 
 def main() -> None:
-    BLOG_DIR: str = "blog/articles/"
+    ARTICLES_DIR: str = "blog/articles/"
+    ARTICLES_DEST: str = "blog/articles/"
 
     articles: list[str] = []
     # get all posts
-    for file in os.listdir(BLOG_DIR):
+    for file in os.listdir(ARTICLES_DIR):
         filename = os.fsdecode(file)
         if filename.endswith(".md") and filename != "template.md":
             articles.append(filename)
@@ -98,7 +96,7 @@ def main() -> None:
     # process file
     for filename_md in articles:
         # parse meta data
-        file_md = open(os.path.join(BLOG_DIR, filename_md), "r")
+        file_md = open(os.path.join(ARTICLES_DIR, filename_md), "r")
         meta_data: dict[str:any] = get_md_meta_data(file_md, filename_md)
         file_md.close()
 
@@ -107,7 +105,7 @@ def main() -> None:
             continue
 
         # create article
-        create_html_file(filename_md, meta_data, BLOG_DIR)
+        create_html_file(filename_md.removesuffix(".md"), meta_data, ARTICLES_DEST)
 
         return
 

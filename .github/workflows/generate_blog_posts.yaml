@@ -24,7 +24,7 @@ jobs:
         pip install -r tools/requirements.txt
 
     - name: Run script
-      run: python tools/generate_blog_posts.py
+      run: python tools/blog/generate_blog_posts.py
 
     # push the changes to the gh-pages branch
       # git push remote blog:gh-pages
