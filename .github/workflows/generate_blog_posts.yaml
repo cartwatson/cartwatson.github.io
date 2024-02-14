@@ -31,8 +31,8 @@ jobs:
       with:
         title: "[AUTO] Merge generated blog posts"
         commit-message: "AUTO: Create blog posts from template"
-        add-paths: blog/articles/*.html
+        add-paths: blog/*.html
         branch: gh-pages
-        base: blog
-        assignees: cartwatson
-        reviewers: cartwatson
+        # base: blog
+        # assignees: cartwatson
+        # reviewers: cartwatson
