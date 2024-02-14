@@ -65,12 +65,14 @@ def write_html_file_contents(
     return
 
 
-def create_html_file(filename_raw: str, meta_data: dict, ARTICLES_DIR: str) -> None:
+def create_html_file(
+    filename_raw: str, meta_data: dict, ARTICLES_DIR: str, ARTICLES_DEST: str
+) -> None:
     """create html file from template and write contents from md file"""
     # create/open files
-    file_html = open(os.path.join(ARTICLES_DIR, filename_raw + ".html"), "w")
+    file_html = open(os.path.join(ARTICLES_DEST, filename_raw + ".html"), "w")
     file_md = open(os.path.join(ARTICLES_DIR, filename_raw + ".md"), "r")
-    template = open(os.path.join(ARTICLES_DIR, "template.html"), "r")
+    template = open(os.path.join(ARTICLES_DIR, "../template.html"), "r")
 
     # write contents
     write_html_meta_data(file_html, template, meta_data)
@@ -105,7 +107,9 @@ def main() -> None:
             continue
 
         # create article
-        create_html_file(filename_md.removesuffix(".md"), meta_data, ARTICLES_DEST)
+        create_html_file(
+            filename_md.removesuffix(".md"), meta_data, ARTICLES_DIR, ARTICLES_DEST
+        )
 
         return
 
