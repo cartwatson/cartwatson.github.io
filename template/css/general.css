@@ -1,0 +1,122 @@
+:root {
+  --bg1: #01242E;        /* dark blue    */
+  --text: #EEEEEE;       /* almost white */
+  --text-link: #8CC2DD;  /* light blue   */
+  --code-bg: #383838;    /* 1E1E1E */
+
+  --blockquote: #5A8499; /**/
+}
+
+/* FONTS ---------------------------------------------------------------------*/
+@font-face {
+  font-family: miracode;
+  src: url(../media/fonts/Miracode.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../media/fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../media/fonts/OpenSans-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../media/fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
+}
+
+:is(h1, h2, h3, h4, h5, h6), header, footer, code {
+  font-family: miracode;
+}
+
+#content p {
+  font-family: opensans;
+}
+
+/* DESIGN --------------------------------------------------------------------*/
+body {
+  margin: 0;
+  background: var(--bg1);
+  font-size: large;
+}
+
+a {
+  color: var(--text-link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--text-link);
+  text-decoration: underline;
+}
+
+#page {
+  max-width: 33%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--bg1);
+  color: var(--text);
+}
+
+.horizontal-flexbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.left-aligned-item {
+  margin-right: 1rem;
+}
+
+.right-aligned-item {
+  margin-left: 1rem;
+}
+
+footer {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* MARKDOWN ------------------------------------------------------------------*/
+blockquote {
+  border-left: 0.5rem solid var(--blockquote);
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+code {
+  background: var(--code-bg);
+  display: block;
+  padding: 1rem;
+}
+
+code p, blockquote p, ol li, ul li {
+  word-break: break-word;
+}
+
+code p {
+  /* default is 1rem margin */
+  margin-top:    0rem;
+  margin-bottom: 0rem;
+}
+
+p code {
+  display: inline;
+  padding: 0.125rem;
+}
+
+/* MOBILE FORMATTING ---------------------------------------------------------*/
+@media screen and (max-width: 600px) {
+  #page {
+    padding-left:  1rem;
+    padding-right: 1rem;
+    max-width: 100vw;
+  }
+}
