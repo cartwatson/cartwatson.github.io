@@ -1,21 +1,20 @@
 :root {
-  --bg1: #01242E;          /* dark blue    */
-  --text: #EEEEEE;         /* almost white */
-  --text-link: #8CC2DD;    /* light blue   */
-  --code-bg: #383838;      /* 1E1E1E */
-
-  --blockquote: #5A8499;   /**/
-}
+  --bg1: #282828;
+  --text: #FBF1C7;
+  --text-link: #B8BB26;
+  --code-bg: #1D2021;
+  --blockquote: #FABD2F;
+  --hr: #458588;
+ }
 
 @media (prefers-color-scheme: light) {
   :root {
-    /* TODO: fix contrast here */
-    --bg1: #EEEEEE;        /* almost white */
-    --text:  #01242E;      /* dark blue    */
-    --text-link: #8CC2DD;  /* light blue   */
-    --code-bg: #383838;    /* 1E1E1E */
-
-    --blockquote: #5A8499; /**/
+    --bg1: #F9F5D7;
+    --text: #282828;
+    --text-link: #076678;
+    --code-bg: #BDAE93;
+    --blockquote: #B57614;
+    --hr: #B8BB26;
   }
 }
 
@@ -89,15 +88,21 @@ a:hover {
   margin-left: 1rem;
 }
 
-footer {
+header > div, footer > div {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
+hr {
+  border-color: var(--hr);
+}
+
 /* MARKDOWN ------------------------------------------------------------------*/
 blockquote {
-  border-left: 0.5rem solid var(--blockquote);
+  border-left: 0.25rem solid var(--blockquote);
   margin: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -125,7 +130,7 @@ p code {
 }
 
 /* MOBILE FORMATTING ---------------------------------------------------------*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   #page {
     padding-left:  1rem;
     padding-right: 1rem;
