@@ -1,24 +1,23 @@
 :root {
-  --bg1: #01242E;        /* dark blue    */
-  --text: #EEEEEE;       /* almost white */
-  --text-link: #8CC2DD;  /* light blue   */
-  --code-bg: #383838;    /* 1E1E1E */
+  --bg1: #01242E;          /* dark blue    */
+  --text: #EEEEEE;         /* almost white */
+  --text-link: #8CC2DD;    /* light blue   */
+  --code-bg: #383838;      /* 1E1E1E */
 
-  --blockquote: #5A8499; /**/
+  --blockquote: #5A8499;   /**/
 }
 
 @media (prefers-color-scheme: light) {
   :root {
     /* TODO: fix contrast here */
-    --bg1: #EEEEEE;       /* almost white */
-    --text:  #01242E;        /* dark blue    */
+    --bg1: #EEEEEE;        /* almost white */
+    --text:  #01242E;      /* dark blue    */
     --text-link: #8CC2DD;  /* light blue   */
     --code-bg: #383838;    /* 1E1E1E */
 
     --blockquote: #5A8499; /**/
   }
 }
-
 
 /* FONTS ---------------------------------------------------------------------*/
 @font-face {
