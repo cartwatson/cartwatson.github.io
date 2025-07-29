@@ -1,33 +1,42 @@
 name: "Build + Deploy with Calcite"
+
 on:
   push:
     branches:
       - gh-pages
+
 permissions:
   contents: read
   pages: write
   id-token: write
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: checkout
+        uses: actions/checkout@v4
+
       - name: install nix
-        uses: DeterminateSystems/nix-installer-action@v11
-      - name: install nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@v11
+        uses: cachix/install-nix-action@v31
+
       - name: setup pages
         id: pages
         uses: actions/configure-pages@v5
+
       - name: Build with calcite
         run: nix run github:cartwatson/calcite
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
+          name: calcite-output
           path: ./out
+
   deploy:
     environment:
       name: github-pages
