@@ -73,6 +73,15 @@ a:hover {
   margin-right: auto;
   background: var(--bg1);
   color: var(--text);
+
+  /* put footer at bottom of page */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  flex: 1;
 }
 
 .horizontal-flexbox {
