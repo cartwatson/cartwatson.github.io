@@ -27,11 +27,14 @@
 @font-face {
   font-family: opensans;
   src: url(../media/fonts/OpenSans-Regular.ttf);
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
   font-family: opensans;
   src: url(../media/fonts/OpenSans-Italic.ttf);
+  font-weight: normal;
   font-style: italic;
 }
 
@@ -39,6 +42,14 @@
   font-family: opensans;
   src: url(../media/fonts/OpenSans-Bold.ttf);
   font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: opensans-bolditalic;
+  src: url(../media/fonts/OpenSans-BoldItalic.ttf);
+  font-weight: bold;
+  font-style: italic;
 }
 
 :is(h1, h2, h3, h4, h5, h6), header, footer, code {
@@ -107,6 +118,10 @@ header > div, footer > div {
 
 hr {
   border-color: var(--hr);
+}
+
+#content > hr {
+  border-color: var(--codebg);
 }
 
 /* MARKDOWN ------------------------------------------------------------------*/
