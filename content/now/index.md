@@ -1,6 +1,6 @@
 # Now
 
-TODO: fill this out
+I'll fill this out soon!
 
 What is a [now page](https://nownownow.com/about)
 
