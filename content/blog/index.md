@@ -1,6 +1,6 @@
 # Blog Posts
 
-I'll post more here soon!
+My goal is to post at least one article a month!
 
 ## Pinned articles
 
