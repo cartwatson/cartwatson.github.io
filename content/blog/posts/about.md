@@ -8,4 +8,3 @@ When I'm not making the world a place. I work on my home lab, catch up on a new 
 
 If you want to chat about what I've written or anything else, reach out to me on [LinkedIn](https://linkedin.com/in/cartwatson), always happy to yap
 
-
