@@ -1,3 +1,9 @@
 # Blog Posts
 
-2025-03-12 [Titlte of post](link_to_post)
+## Pinned articles
+
+2025-08-04 [about me](posts/about.md)
+
+## Chronology
+
+2025-08-04 [about me](posts/about.md)
