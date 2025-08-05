@@ -10,3 +10,5 @@ Hosted on Github Pages
 ## Design Inspirations
 
 - [bear blog](https://bearblog.dev/)
+- [gruvbox](https://github.com/morhetz/gruvbox)
+
