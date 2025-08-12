@@ -1,3 +1,7 @@
+# explicity allow internet archive
+User-agent: archive.org_bot
+Disallow:
+
 # [source](https://www.cyberciti.biz/web-developer/block-openai-bard-bing-ai-crawler-bots-using-robots-txt-file/)
 User-agent: GPTBot
 Disallow: /
