@@ -1,6 +1,6 @@
 # Blog Posts
 
-My goal is to post at least one article a month!
+*My goal is to post at least one article a month*
 
 ## Pinned articles
 
@@ -9,3 +9,4 @@ My goal is to post at least one article a month!
 ## Chronology
 
 2025-08-04 [about me](posts/about.md)
+
