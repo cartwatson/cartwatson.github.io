@@ -1,6 +1,6 @@
 # Blog Posts
 
-*My goal is to post at least one article a month*
+*My goal for 2026 is to post at least one article a quarter*
 
 ## Pinned articles
 
