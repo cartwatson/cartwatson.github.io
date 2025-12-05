@@ -1,4 +1,6 @@
 # Projects
 
-I'll back fill this section with my projects with at least one write-up a month until I'm caught up. After that I hope to complete a project or have something worth writing about at least once a quarter but maybe every two months?
+*My goal for 2026 is to backfill this section with at least one write-up a quarter*
+
+*In addition I hope to find the time to contribute to my own and other projects more often (and write about it here!)*
 
