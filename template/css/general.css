@@ -1,10 +1,12 @@
+/* THEMES --------------------------------------------------------------------*/
+/* default to dark mode */
 :root {
-  --bg1: #282828;
+  --bg1: #1C1C1C;
   --text: #FBF1C7;
   --text-link: #B8BB26;
-  --code-bg: #1D2021;
+  --code-bg: #504945;
   --blockquote: #FABD2F;
-  --hr: #458588;
+  --accent: #458588;
  }
 
 @media (prefers-color-scheme: light) {
@@ -12,9 +14,9 @@
     --bg1: #F9F5D7;
     --text: #282828;
     --text-link: #076678;
-    --code-bg: #BDAE93;
+    --code-bg: #D5C4A1;
     --blockquote: #B57614;
-    --hr: #B8BB26;
+    --accent: #B8BB26;
   }
 }
 
@@ -62,9 +64,20 @@
 
 /* DESIGN --------------------------------------------------------------------*/
 body {
-  margin: 0;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
   background: var(--bg1);
+  color: var(--text);
   font-size: large;
+
+  /* mobile */
+  padding-left:  30px;
+  padding-right: 30px;
+}
+
+p {
+  line-height: 1.5rem;
 }
 
 a {
@@ -75,24 +88,6 @@ a {
 a:hover {
   color: var(--text-link);
   text-decoration: underline;
-}
-
-#page {
-  max-width: 33%;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  background: var(--bg1);
-  color: var(--text);
-
-  /* put footer at bottom of page */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-#content {
-  flex: 1;
 }
 
 .horizontal-flexbox {
@@ -108,20 +103,24 @@ a:hover {
   margin-left: 1rem;
 }
 
-header > div, footer > div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
 hr {
-  border-color: var(--hr);
+  border-color: var(--accent);
 }
 
 #content > hr {
   border-color: var(--codebg);
+}
+
+header {
+  margin-top: 1rem;
+}
+
+footer p, header p {
+  margin: 0.25rem 0 0.25rem;
+}
+
+img {
+  width:100%;
 }
 
 /* MARKDOWN ------------------------------------------------------------------*/
@@ -151,14 +150,5 @@ code p {
 p code {
   display: inline;
   padding: 0.125rem;
-}
-
-/* MOBILE FORMATTING ---------------------------------------------------------*/
-@media screen and (max-width: 800px) {
-  #page {
-    padding-left:  1rem;
-    padding-right: 1rem;
-    max-width: 100vw;
-  }
 }
 
